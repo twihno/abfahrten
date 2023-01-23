@@ -54,7 +54,7 @@ export async function fetchStations(
       );
 
       for (const opt of potentialStations) {
-        con.info(` - "${opt.name}" - id: "${opt.id}"`);
+        con.warn(` - "${opt.name}" - id: "${opt.id}"`);
       }
 
       if (!useFirstResult) {
