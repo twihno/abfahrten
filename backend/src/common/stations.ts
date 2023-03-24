@@ -1,22 +1,27 @@
 import con from "./console.ts";
 import { CompError, ErrorType } from "./errors.ts";
 import { ProviderTree } from "./providers.ts";
+import { LineList } from "./line.ts";
 
 export type StationQuery = {
   country: string;
   city: string;
   provider: string;
   stationQuery: string;
-  stationId: string | undefined;
-  stationName: string | undefined;
 };
 
 export type Station = {
   country: string;
   city: string;
   provider: string;
-  stationId: string;
-  stationName: string;
+  id: string;
+  internalId: string;
+  name: string;
+  availableLines: LineList;
+};
+
+export type StationList = {
+  [id: string]: Station;
 };
 
 export type StationIdList = {
@@ -28,8 +33,8 @@ export async function fetchStations(
   stations: StationQuery[],
   providerTree: ProviderTree,
   useFirstResult: boolean
-): Promise<Station[]> {
-  const fetchedStations: Station[] = [];
+): Promise<StationList> {
+  const fetchedStations: StationList = {};
 
   for (const station of stations) {
     const provider =
@@ -45,7 +50,7 @@ export async function fetchStations(
     if (potentialStations.length === 0) {
       throw new CompError(
         ErrorType.NOT_FOUND,
-        `No matching station for "${station.country}:${station.city}:${station.provider}@${station.stationQuery}"`
+        `no matching station for "${station.country}:${station.city}:${station.provider}@${station.stationQuery}"`
       );
     }
     if (potentialStations.length > 1) {
@@ -60,19 +65,35 @@ export async function fetchStations(
       if (!useFirstResult) {
         throw new CompError(
           ErrorType.USER_INPUT_REQUIRED,
-          "Can't continue with multiple possible options for this station." +
-            'Please change the id in your config to the desired one or set USE_FIRST to "true"'
+          "Can't continue with multiple possible options for this station. " +
+            'Please change the id in your config to the desired one or set USE_FIRST_RESULT to "true"'
         );
       }
+
+      con.warn("using first candidate because USE_FIRST_RESULT=true");
     }
 
-    fetchedStations.push({
+    const stationId = potentialStations[0].id;
+    const stationName = potentialStations[0].name;
+
+    let availableLines: LineList | undefined;
+    try {
+      availableLines = await provider.getAvailableLines(stationId);
+    } catch (e) {
+      throw e;
+    }
+
+    const internalId = `${station.country}:${station.city}:${station.provider}@${stationId}`;
+
+    fetchedStations[internalId] = {
       country: station.country,
       city: station.city,
       provider: station.provider,
-      stationId: potentialStations[0].id,
-      stationName: potentialStations[0].name,
-    });
+      id: stationId,
+      name: stationName,
+      internalId: `${station.country}:${station.city}:${station.provider}@${stationId}`,
+      availableLines: availableLines,
+    };
 
     con.info(
       `using station "${potentialStations[0].name}" for "${station.country}:${station.city}:${station.provider}@${station.stationQuery}"`

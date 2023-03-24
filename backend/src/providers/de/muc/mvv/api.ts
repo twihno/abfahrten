@@ -1,4 +1,4 @@
-export type stopFinderResult = {
+export type StopFinderResult = {
   success: boolean;
   message: string;
   results: {
@@ -24,4 +24,49 @@ export type stopFinderResult = {
     infos: null; // maybe different, but currently irrelevant
     hasStaticInfo: string;
   }[];
+};
+
+export type ErrorResult = {
+  error: string;
+};
+
+export type MvvNotification = {
+  text: string;
+  link: string;
+  type: string;
+};
+
+export type MvvLine = {
+  number: string;
+  symbol: string;
+  direction: string;
+  stateless: string;
+  name: string;
+};
+
+export type Departure = {
+  line: MvvLine;
+  direction: string;
+  station: {
+    id: string;
+    name: string;
+  };
+  track: string;
+  departureDate: string;
+  departurePlanned: string;
+  departureLive: string;
+  inTime: boolean;
+  notifications: MvvNotification[];
+};
+
+export type DepartureFinderResult = {
+  error: string;
+  departures: Departure[];
+  notifications: MvvNotification[];
+};
+
+export type LineFinderResult = {
+  error: string;
+  lines: MvvLine[];
+  icons: []; // currently unknown but irrelevant
 };

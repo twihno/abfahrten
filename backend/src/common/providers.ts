@@ -1,6 +1,25 @@
+import con from "./console.ts";
+import { Departure, Notification, VehicleType } from "./departures.ts";
 import { CompError, ErrorType } from "./errors.ts";
-import { StationIdList } from "./stations.ts";
+import { LineList } from "./line.ts";
+import { Station, StationIdList } from "./stations.ts";
 import { StationQuery } from "./stations.ts";
+
+/**
+ * Common interface describing all providers
+ */
+export interface Provider {
+  name: string;
+  findStationId(searchQuery: string): Promise<StationIdList>;
+  getCurrentDepartures(
+    station: Station,
+    lines: LineList
+  ): Promise<{
+    departures: Departure[];
+    notifications: Notification[];
+  }>;
+  getAvailableLines(stationId: string): Promise<LineList>;
+}
 
 /**
  * Parses a raw station string and extracts the required provider and provider-specific station identifier
@@ -28,8 +47,6 @@ function parseStationIdentifier(station: string): StationQuery {
     city: city,
     provider: provider,
     stationQuery: station.substring(separatorIndex + 1, station.length),
-    stationId: undefined,
-    stationName: undefined,
   };
 }
 
@@ -51,18 +68,17 @@ export function parseStationIdentifiers(stations: string[]) {
 }
 
 /**
- * Common interface describing all providers
- */
-export interface Provider {
-  name: string;
-  findStationId(searchQuery: string): Promise<StationIdList>;
-}
-
-/**
  * Type for all country meta.ts files
  */
 export type CountryMeta = {
   name: string;
+};
+
+export type LineConfig = {
+  [type in VehicleType]: {
+    [name: string]: { fontColor: string; background: string };
+    default: { fontColor: string; background: string };
+  };
 };
 
 /**
@@ -71,6 +87,7 @@ export type CountryMeta = {
 export type CityMeta = {
   name: string;
   defaultProvider: string;
+  lineConfig: LineConfig;
 };
 
 /**
@@ -83,12 +100,9 @@ export type ProviderTree = {
         providers: {
           [provider: string]: Provider;
         };
-        name: string;
-        defaultProvider: string;
-      };
+      } & CityMeta;
     };
-    name: string;
-  };
+  } & CountryMeta;
 };
 
 /**
@@ -138,6 +152,7 @@ export async function generateProviderTree(
         providers: {},
         name: cityMeta.name,
         defaultProvider: cityMeta.defaultProvider,
+        lineConfig: cityMeta.lineConfig,
       };
     }
 
@@ -146,13 +161,16 @@ export async function generateProviderTree(
 
     // Add provider if necessary
     if (station.provider === "default") {
+      con.warn(
+        `using default provider "${station.country}:${station.city}:${providerTreeCurrentCity.defaultProvider}" for "${station.country}:${station.city}", because no specific provider has been provided`
+      );
       station.provider = providerTreeCurrentCity.defaultProvider;
     }
     if (!(station.provider in providerTreeCurrentCity)) {
-      let provider: Provider;
+      let providerModule: { Provider: { new (): Provider } };
 
       try {
-        provider = await import(
+        providerModule = await import(
           `../providers/${station.country}/${station.city}/${station.provider}/provider.ts`
         );
       } catch {
@@ -162,7 +180,8 @@ export async function generateProviderTree(
         );
       }
 
-      providerTreeCurrentCity.providers[station.provider] = provider;
+      providerTreeCurrentCity.providers[station.provider] =
+        new providerModule.Provider();
     }
   }
   return providers;
