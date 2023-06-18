@@ -21,10 +21,13 @@ import { getEnv } from "./common/env.ts";
 
 con.info(`Abfahrten Server - version ${version}\n`);
 
+// Load settings in environment variables
 const env = getEnv();
 
+// Split station identifiers listed in env variable
 const rawStationIdentifiers = env.stationIdentifiers.split(";");
 
+// Parse station identifiers
 let stationQueries: StationQuery[] = [];
 try {
   stationQueries = parseStationIdentifiers(rawStationIdentifiers);
@@ -50,6 +53,24 @@ try {
   exitError(e);
 }
 
+const stationsOverview: {
+  id: string;
+  country: string;
+  city: string;
+  name: string;
+  abfahrtenId: string;
+}[] = [];
+
+for (const station in stations) {
+  stationsOverview.push({
+    id: stations[station].id,
+    country: stations[station].country,
+    city: stations[station].city,
+    name: stations[station].name,
+    abfahrtenId: stations[station].internalId,
+  });
+}
+
 const departures: CommonDepartureList = {};
 for (const stationId in stations) {
   const station = stations[stationId];
@@ -71,11 +92,6 @@ const useJsonResponse = (res: OakResponse) => {
 };
 
 const router = new OakRouter();
-router.get(`${env.baseUrl}/available`, (ctx) => {
-  useJsonResponse(ctx.response);
-  // Oak seems to filter all spicy parts of providerTree
-  ctx.response.body = { stations: stations, provider: providerTree };
-});
 
 router.get(`${env.baseUrl}/departures/:stationId`, (ctx) => {
   useJsonResponse(ctx.response);
@@ -86,10 +102,34 @@ router.get(`${env.baseUrl}/departures/:stationId`, (ctx) => {
   }
 });
 
+router.get(`${env.baseUrl}/stations`, (ctx) => {
+  useJsonResponse(ctx.response);
+
+  ctx.response.body = stationsOverview;
+});
+
 router.get(`${env.baseUrl}/stations/:stationId`, (ctx) => {
   useJsonResponse(ctx.response);
   if (ctx.params.stationId in stations) {
     ctx.response.body = stations[ctx.params.stationId];
+  } else {
+    ctx.response.status = 404;
+  }
+});
+
+router.get(`${env.baseUrl}/city/:stationId`, (ctx) => {
+  useJsonResponse(ctx.response);
+  if (!providerTree) {
+    ctx.response.status = 500;
+  } else if (ctx.params.stationId in stations) {
+    const tmpStation = stations[ctx.params.stationId];
+    const city = providerTree[tmpStation.country].cities[tmpStation.city];
+    ctx.response.body = {
+      name: city.name,
+      city: tmpStation.city,
+      country: tmpStation.country,
+      lineConfigs: city.lineConfig,
+    };
   } else {
     ctx.response.status = 404;
   }

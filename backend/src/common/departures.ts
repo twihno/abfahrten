@@ -14,6 +14,7 @@ export const enum VehicleType {
 
 export type Departure = {
   direction: string;
+  lineName: string;
   lineId: string;
   trackLabel: string;
   track: string;
