@@ -93,7 +93,7 @@ const useJsonResponse = (res: OakResponse) => {
 
 const router = new OakRouter();
 
-router.get(`${env.baseUrl}/departures/:stationId`, (ctx) => {
+router.get(`${env.baseUrl}/v1/departures/:stationId`, (ctx) => {
   useJsonResponse(ctx.response);
   if (ctx.params.stationId in stations) {
     ctx.response.body = departures[ctx.params.stationId];
@@ -102,13 +102,13 @@ router.get(`${env.baseUrl}/departures/:stationId`, (ctx) => {
   }
 });
 
-router.get(`${env.baseUrl}/stations`, (ctx) => {
+router.get(`${env.baseUrl}/v1/stations`, (ctx) => {
   useJsonResponse(ctx.response);
 
   ctx.response.body = stationsOverview;
 });
 
-router.get(`${env.baseUrl}/stations/:stationId`, (ctx) => {
+router.get(`${env.baseUrl}/v1/stations/:stationId`, (ctx) => {
   useJsonResponse(ctx.response);
   if (ctx.params.stationId in stations) {
     ctx.response.body = stations[ctx.params.stationId];
@@ -117,7 +117,7 @@ router.get(`${env.baseUrl}/stations/:stationId`, (ctx) => {
   }
 });
 
-router.get(`${env.baseUrl}/city/:stationId`, (ctx) => {
+router.get(`${env.baseUrl}/v1/city/:stationId`, (ctx) => {
   useJsonResponse(ctx.response);
   if (!providerTree) {
     ctx.response.status = 500;
