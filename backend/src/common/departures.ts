@@ -1,5 +1,6 @@
 import { DateTime } from "../../deps.ts";
 import con from "./console.ts";
+import { printError } from "./errors.ts";
 import { Provider, ProviderTree } from "./providers.ts";
 import { Station } from "./stations.ts";
 
@@ -82,7 +83,7 @@ export async function updateDeparture(
     );
     con.info(`updated ${station.internalId} - ${station.name}`);
   } catch (e) {
-    con.error(e);
+    printError(e);
     _departures = { departures: [], notifications: [] };
     return;
   }
