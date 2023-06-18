@@ -39,6 +39,9 @@ function getVehicleType(name: string): VehicleType {
 function parsePlatformNumber(
   rawPlatform: string
 ): [platformNumber: string, label: string] {
+  if (rawPlatform === "") {
+    return ["", ""];
+  }
   // Only number: e.g. S-Bahn
   if (rawPlatform.match(/^[1-9]+[0-9]*$/gm)) {
     return [rawPlatform, "Gleis"];
@@ -241,6 +244,7 @@ export class Provider implements ProviderCommon {
       return {
         direction: departure.direction,
         lineId: lineId,
+        lineName: station.availableLines[lineId].name,
         trackLabel: trackLabel,
         track: trackNumber,
         departurePlanned: departurePlanend,
