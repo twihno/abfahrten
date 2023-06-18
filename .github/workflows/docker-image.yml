@@ -19,17 +19,17 @@ jobs:
       with:
         install: true
 
-    - name: Login to DockerHub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    #- name: Login to DockerHub
+    #  uses: docker/login-action@v2
+    #  with:
+    #    username: ${{ secrets.DOCKERHUB_USERNAME }}
+    #    password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: twihno
+        username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and push to Docker registries
@@ -41,6 +41,7 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          twihno/abfahrten-backend:latest
           ghcr.io/twihno/abfahrten-backend:latest
+       #   twihno/abfahrten-backend:latest
+          
 
