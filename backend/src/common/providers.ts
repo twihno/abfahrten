@@ -76,8 +76,12 @@ export type CountryMeta = {
 
 export type LineConfig = {
   [type in VehicleType]: {
-    [name: string]: { fontColor: string; background: string };
-    default: { fontColor: string; background: string };
+    [name: string]: {
+      fontColor: string;
+      background: string;
+      radius: "0" | "m" | "f";
+    };
+    default: { fontColor: string; background: string; radius: "0" | "m" | "f" };
   };
 };
 
