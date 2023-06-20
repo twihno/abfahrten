@@ -28,16 +28,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/luxon", "npm:3.3.0"],\
             ["@types/node", "npm:20.3.1"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["autoprefixer", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:10.4.14"],\
             ["eslint", "npm:8.43.0"],\
             ["eslint-config-next", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:13.4.6"],\
+            ["luxon", "npm:3.3.0"],\
             ["next", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:13.4.6"],\
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:18.2.0"],\
+            ["swr", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:2.1.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
@@ -435,6 +438,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/luxon", [\
+        ["npm:3.3.0", {\
+          "packageLocation": "./.yarn/cache/@types-luxon-npm-3.3.0-f9cb3e11d9-f7e3a89fc3.zip/node_modules/@types/luxon/",\
+          "packageDependencies": [\
+            ["@types/luxon", "npm:3.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/node", [\
         ["npm:20.3.1", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-20.3.1-86012346c0-63a393ab6d.zip/node_modules/@types/node/",\
@@ -588,16 +600,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["abfahrten", "workspace:."],\
+            ["@types/luxon", "npm:3.3.0"],\
             ["@types/node", "npm:20.3.1"],\
             ["@types/react", "npm:18.2.13"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["autoprefixer", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:10.4.14"],\
             ["eslint", "npm:8.43.0"],\
             ["eslint-config-next", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:13.4.6"],\
+            ["luxon", "npm:3.3.0"],\
             ["next", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:13.4.6"],\
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:18.2.0"],\
+            ["swr", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:2.1.5"],\
             ["tailwindcss", "npm:3.3.2"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
@@ -3103,6 +3118,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["luxon", [\
+        ["npm:3.3.0", {\
+          "packageLocation": "./.yarn/cache/luxon-npm-3.3.0-bdbae9bfd5-50cf17a0dc.zip/node_modules/luxon/",\
+          "packageDependencies": [\
+            ["luxon", "npm:3.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["make-fetch-happen", [\
         ["npm:11.1.1", {\
           "packageLocation": "./.yarn/cache/make-fetch-happen-npm-11.1.1-f32b79aaaa-7268bf274a.zip/node_modules/make-fetch-happen/",\
@@ -4552,6 +4576,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["swr", [\
+        ["npm:2.1.5", {\
+          "packageLocation": "./.yarn/cache/swr-npm-2.1.5-fda6091d1a-f2ef9b83ec.zip/node_modules/swr/",\
+          "packageDependencies": [\
+            ["swr", "npm:2.1.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:2.1.5", {\
+          "packageLocation": "./.yarn/__virtual__/swr-virtual-0ade8c391b/0/cache/swr-npm-2.1.5-fda6091d1a-f2ef9b83ec.zip/node_modules/swr/",\
+          "packageDependencies": [\
+            ["swr", "virtual:01a1102964e4209da51925417563309c762b09637cfe90706db6a3efb8e0a83fbffd9ca9cf3295d765a71e5424c0aa33a6c7a3662fa948ee49b1d55b975d5d1d#npm:2.1.5"],\
+            ["@types/react", "npm:18.2.13"],\
+            ["react", "npm:18.2.0"],\
+            ["use-sync-external-store", "virtual:0ade8c391b21100b8e8ae3e7e97bd848aeead1fc42887ab100a53cc5676441b8eab8f504fde16500441bbc20c1f3bf2cb0ec5cdd65b3a5e0f09bc947e673e2f0#npm:1.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["synckit", [\
         ["npm:0.8.5", {\
           "packageLocation": "./.yarn/cache/synckit-npm-0.8.5-40a594eb38-8a9560e5d8.zip/node_modules/synckit/",\
@@ -4840,6 +4887,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["uri-js", "npm:4.4.1"],\
             ["punycode", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["use-sync-external-store", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/use-sync-external-store-npm-1.2.0-44f75d2564-5c639e0f8d.zip/node_modules/use-sync-external-store/",\
+          "packageDependencies": [\
+            ["use-sync-external-store", "npm:1.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0ade8c391b21100b8e8ae3e7e97bd848aeead1fc42887ab100a53cc5676441b8eab8f504fde16500441bbc20c1f3bf2cb0ec5cdd65b3a5e0f09bc947e673e2f0#npm:1.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-c85cf68dae/0/cache/use-sync-external-store-npm-1.2.0-44f75d2564-5c639e0f8d.zip/node_modules/use-sync-external-store/",\
+          "packageDependencies": [\
+            ["use-sync-external-store", "virtual:0ade8c391b21100b8e8ae3e7e97bd848aeead1fc42887ab100a53cc5676441b8eab8f504fde16500441bbc20c1f3bf2cb0ec5cdd65b3a5e0f09bc947e673e2f0#npm:1.2.0"],\
+            ["@types/react", "npm:18.2.13"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
