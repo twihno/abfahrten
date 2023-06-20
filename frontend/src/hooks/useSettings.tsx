@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
-import { ExtendedSettings, Settings } from "../../types/settings";
+import { ExtendedSettings, Settings } from "../types/settings";
 
 export const SettingsContext = createContext<ExtendedSettings>(undefined);
 

@@ -1,7 +1,20 @@
-import useSWR from "swr";
+import useSWR, { SWRResponse } from "swr";
+import { DepartureList } from "../types/api";
+import { ExtendedSettings } from "../types/settings";
 
-export async function useDepartures(baseUrl: string) {
-  const { data, error, isLoading } = useSWR("/api/user", (args) =>
-    fetch(args).then((res) => res.json())
-  );
+export function useDepartures(settings: ExtendedSettings) {
+  let key = "";
+  let fetcher: ((args: string) => Promise<DepartureList>) | null = null;
+  if (settings) {
+    key = `${settings.serverURL}/api/v1/departures/${settings.station}`;
+    fetcher = async (args: string): Promise<DepartureList> => {
+      try {
+        return (await fetch(args)).json();
+      } catch (err) {
+        throw err;
+      }
+    };
+  }
+
+  return useSWR(key, fetcher);
 }

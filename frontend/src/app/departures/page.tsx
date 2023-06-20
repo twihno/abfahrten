@@ -1,5 +1,5 @@
 import Departures from "../../components/common/departures";
-import { SettingsProvider } from "../../components/common/settings";
+import { SettingsProvider } from "../../hooks/useSettings";
 
 export default function Home() {
   return (
