@@ -7,10 +7,12 @@ RUN deno vendor deps.ts
 
 FROM docker.io/denoland/deno:alpine
 
-RUN addgroup -S denogroup && adduser -S denouser -G denogroup && install -d -m 0755 -o denouser -g denogroup /abfahrten && install -d -m 0755 -o denouser -g denogroup /deno-dir
-USER denouser
-WORKDIR /abfahrten
+LABEL org.opencontainers.image.source=https://github.com/twihno/abfahrten
+LABEL org.opencontainers.image.description="Simple application to display the departures of a public transport stop"
+LABEL org.opencontainers.image.licenses=MIT
 
-COPY --chown=denouser:denogroup --from=builder /abfahrten /abfahrten
+USER deno
+WORKDIR /deno-dir
+COPY --chown=deno:deno --from=builder /abfahrten /deno-dir
 
-CMD ["deno","run","--no-remote","--import-map=vendor/import_map.json","--allow-env=PORT,STATIONS,BASE_URL,USE_FIRST_RESULT,FETCH_INTERVAL,CORS", "--allow-read=src/providers/","--allow-net","src/main.ts"]
+CMD ["run","--no-remote","--import-map=vendor/import_map.json","--allow-env=PORT,STATIONS,BASE_URL,USE_FIRST_RESULT,FETCH_INTERVAL,CORS", "--allow-read=src/providers/","--allow-net","src/main.ts"]
