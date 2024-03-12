@@ -1,26 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	devtools: { enabled: true },
+  devtools: { enabled: true },
 
-	vite: {
-		vue: {
-			script: {
-				propsDestructure: true,
-			},
-		},
-	},
+  vite: {
+    vue: {
+      script: {
+        propsDestructure: true,
+      },
+    },
+  },
 
-	typescript: {
-		tsConfig: {
-			compilerOptions: {
-				paths: {
-					"@": ["."],
-					"@/*": ["./*"],
-				},
-			},
-		},
-	},
+  typescript: {
+    typeCheck: true,
+    tsConfig: {
+      compilerOptions: {
+        paths: {
+          "@": ["."],
+          "@/*": ["./*"],
+        },
+      },
+    },
+  },
 
-	css: ["@/styles/global.css"],
-	modules: ["@nuxt/fonts", "@vueuse/nuxt", "nuxt-icon"],
+  css: ["@/styles/global.css"],
+  modules: ["@nuxt/fonts", "@vueuse/nuxt", "nuxt-icon"],
 });

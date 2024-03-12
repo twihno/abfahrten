@@ -1,29 +1,30 @@
 {
-	"name": "abfahrten-frontend",
-	"type": "module",
-	"private": true,
-	"packageManager": "pnpm@8.15.4",
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix"
-	},
-	"dependencies": {
-		"nuxt": "^3.10.3",
-		"vue": "^3.4.21",
-		"vue-router": "^4.3.0"
-	},
-	"devDependencies": {
-		"typescript": "^5.4.2",
-		"sass": "^1.71.1",
-		"@nuxt/eslint-config": "^0.2.0",
-		"@nuxt/fonts": "^0.2.1",
-		"@vueuse/nuxt": "^10.9.0",
-		"eslint": "^8.57.0",
-		"nuxt-icon": "^0.6.9"
-	}
+  "name": "abfahrten-frontend",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/fonts": "^0.2.1",
+    "@vueuse/nuxt": "^10.9.0",
+    "eslint": "^8.57.0",
+    "nuxt-icon": "^0.6.9",
+    "sass": "^1.71.1",
+    "typescript": "^5.4.2",
+    "vue-tsc": "^1"
+  }
 }
