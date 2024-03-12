@@ -1,6 +1,7 @@
 {
-  "recommendations": [
-    "arcanis.vscode-zipfs",
-    "dbaeumer.vscode-eslint"
-  ]
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"seatonjiang.gitmoji-vscode",
+		"vue.volar"
+	]
 }
