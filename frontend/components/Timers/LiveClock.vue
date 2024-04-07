@@ -14,7 +14,9 @@ const props = withDefaults(
   }
 );
 
-const timeoutHandler = ref<NodeJS.Timeout>();
+// TODO fix props change
+
+const timeoutHandle = ref<NodeJS.Timeout>();
 const timeString = ref<string>();
 
 function updateText(currentTime: Date) {
@@ -56,38 +58,47 @@ function updateText(currentTime: Date) {
   timeString.value = tmpTimeString;
 }
 
-onUnmounted(() => {
-  if (timeoutHandler.value !== undefined) {
-    clearTimeout(timeoutHandler.value);
-  }
-});
-
-onMounted(tick);
-
 function tick() {
-  if (timeoutHandler.value !== undefined) {
-    clearTimeout(timeoutHandler.value);
+  // Clear already existing timeout (if it exists)
+  if (timeoutHandle.value !== undefined) {
+    clearTimeout(timeoutHandle.value);
   }
 
   const currentTime = new Date();
   updateText(currentTime);
 
   if (props.blinking || props.secondsVisible) {
-    timeoutHandler.value = setTimeout(
+    // If the seconds are visible or the cursor is blinking:
+    // Update the text at the next full second
+    timeoutHandle.value = setTimeout(
       tick,
       1000 - currentTime.getMilliseconds()
     );
   } else {
+    // Update the text at the next full minute
     let delta =
       (60 - currentTime.getSeconds()) * 1000 - currentTime.getMilliseconds();
+    // If the delta is > 1sec : Reduce timeout by 1 second to mitigate
+    // a potential offset caused by the browser's timeout handling.
+    // This causes another timeout & callback less than 1 sec before the actual target
     if (delta > 1000) {
       delta -= 1000;
     }
-    timeoutHandler.value = setTimeout(tick, delta);
+    timeoutHandle.value = setTimeout(tick, delta);
   }
 }
+
+onMounted(tick);
+onUpdated(tick);
+onUnmounted(() => {
+  if (timeoutHandle.value !== undefined) {
+    clearTimeout(timeoutHandle.value);
+  }
+});
 </script>
 
 <template>
-  {{ timeString }}
+  <span>
+    {{ timeString }}
+  </span>
 </template>
