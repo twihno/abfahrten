@@ -1,0 +1,14 @@
+[package]
+name = "abfahrten_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.12.4", features = ["json"] }
+simplelog = "0.12.2"
+log = "0.4.21"
+rocket = { version = "0.5.0", features = ["json"] }
+chrono = "0.4.38"
+serde_json = "1.0.116"
