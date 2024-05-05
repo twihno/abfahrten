@@ -25,16 +25,16 @@ impl<Tz: TimeZone> Departure<Tz> {
 		notification_ids: Vec<String>,
 	) -> Departure<Tz> {
 		Departure {
-			destination: destination,
-			line_name: line_name,
-			line_id: line_id,
-			track: track,
-			track_label: track_label,
-			departure_planned: departure_planned,
-			departure_live: departure_live,
-			on_time: departure_planned.,
-			notification: notification,
-			notification_ids: notification_ids,
+			destination,
+			line_name,
+			line_id,
+			track,
+			track_label,
+			departure_planned: departure_planned.clone(),
+			departure_live: departure_live.clone(),
+			on_time: departure_planned == departure_live,
+			notification: notification_ids.len() > 0,
+			notification_ids,
 		}
 	}
 }

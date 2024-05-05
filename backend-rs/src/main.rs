@@ -1,20 +1,8 @@
-use abfahrten_backend::util::{config, exit::exit_critical, log, serve};
-use rocket::launch;
+use abfahrten_backend::util::{base_config::get_or_load_base_config, serve::start_webserver};
 
-// #[launch]
-// fn rocket() -> _ {
-// 	log::init_logging();
+#[tokio::main]
+async fn main() {
+	let base_config = get_or_load_base_config();
 
-// 	print!("{}", "3".parse::<u8>().unwrap());
-
-// 	let config = match config::load_config() {
-// 		Err(_) => exit_critical("Couldn't load config", true),
-// 		Ok(config) => config,
-// 	};
-
-// 	serve::start()
-// }
-
-fn main(){
-	let date1 = chrono::DateTime<chrono::TimeZone::
+	tokio::spawn(start_webserver(base_config));
 }
