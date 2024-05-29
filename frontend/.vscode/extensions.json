@@ -1,7 +1,7 @@
 {
-	"recommendations": [
-		"dbaeumer.vscode-eslint",
-		"seatonjiang.gitmoji-vscode",
-		"vue.volar"
-	]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "vue.volar",
+    "vivaxy.vscode-conventional-commits"
+  ]
 }
