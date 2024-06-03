@@ -1,6 +1,7 @@
 //! Helper functions for working with environment variables (or at least get their values)
 
 use std::{
+	any::type_name,
 	env::{self, VarError},
 	path::PathBuf,
 	str::FromStr,
@@ -16,32 +17,63 @@ use tracing::Level;
 /// Errors that can occur during the reading and parsing of
 /// an environment variable
 #[derive(thiserror::Error, Debug)]
-pub enum EnvError<T> {
-	#[error("Environment variable not present")]
+pub enum EnvError {
+	#[error("Environment variable \"{variable_name}\" not present")]
 	/// Environment variable not present
-	NotPresent,
-	#[error("Environment variable not valid unicode")]
+	NotPresent { variable_name: String },
+	#[error("The value of the environment variable \"{variable_name}\" is not valid unicode")]
 	/// Environment variable not valid unicode
-	NotUnicode,
-	#[error("Error while trying to parse the environment variable as the requested type")]
+	NotUnicode { variable_name: String },
+	#[error("Error while trying to parse the environment variable \"{variable_name}\" as the requested type \"{r#type}\"")]
 	/// Error while trying to parse the environment variable as the requested type
-	ParseError(T),
+	ParseError {
+		variable_name: String,
+		r#type: String,
+	},
 }
 
 /// Tries to retrieve the environment variable `key` and convert it to
 /// the desired type.
-pub fn get_typed_env<T: FromStr>(key: &str) -> Result<T, EnvError<<T as FromStr>::Err>> {
+pub fn get_typed_env<T: FromStr>(key: &str) -> Result<T, EnvError> {
 	let env_value = match env::var(key) {
 		Err(err) => match err {
-			VarError::NotPresent => return Err(EnvError::NotPresent),
-			VarError::NotUnicode(_) => return Err(EnvError::NotUnicode),
+			VarError::NotPresent => {
+				return Err(EnvError::NotPresent {
+					variable_name: key.to_string(),
+				})
+			}
+			VarError::NotUnicode(_) => {
+				return Err(EnvError::NotUnicode {
+					variable_name: key.to_string(),
+				})
+			}
 		},
 		Ok(val) => val,
 	};
 
 	match env_value.parse::<T>() {
-		Err(err) => Err(EnvError::ParseError(err)),
+		Err(_) => Err(EnvError::ParseError {
+			variable_name: key.to_string(),
+			r#type: type_name::<T>().to_string(),
+		}),
 		Ok(val) => Ok(val),
+	}
+}
+
+/// Tries to retrieve the environment variable `key` and convert it to
+/// the desired type.
+///
+/// If the environment variable isn't set, it returns the default value.
+pub fn get_typed_env_with_default<T: FromStr>(key: &str, default: T) -> Result<T, EnvError> {
+	let err = match get_typed_env::<T>(key) {
+		Ok(val) => return Ok(val),
+		Err(err) => err,
+	};
+
+	match err {
+		EnvError::NotPresent { .. } => return Ok(default),
+		EnvError::NotUnicode { .. } => return Err(err),
+		EnvError::ParseError { .. } => return Err(err),
 	}
 }
 
@@ -59,15 +91,15 @@ pub fn get_typed_env_or_panic<T: FromStr>(key: &str, default: T) -> T {
 	match env_val {
 		Ok(val) => return val,
 		Err(err) => match err {
-			EnvError::NotPresent => return default,
-			EnvError::NotUnicode => exit_critical(
+			EnvError::NotPresent { .. } => return default,
+			EnvError::NotUnicode { .. } => exit_critical(
 				&format!(
 					"Value for environment variable \"{}\" is not valid unicode.",
 					key
 				),
 				true,
 			),
-			EnvError::ParseError(_) => exit_critical(
+			EnvError::ParseError { .. } => exit_critical(
 				&format!("Couldn't parse environment variable \"{}\".", key),
 				true,
 			),

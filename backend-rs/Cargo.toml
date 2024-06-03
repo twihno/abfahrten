@@ -9,6 +9,7 @@ publish = false
 [dependencies]
 axum = "0.7.5"
 chrono = "0.4.38"
+display-error-chain = "0.2.0"
 dotenvy = "0.15.7"
 hyper = { version = "1.0", features = [] }
 hyper-util = { version = "0.1", features = ["tokio", "server-auto", "http1"] }

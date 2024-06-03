@@ -3,11 +3,12 @@
 		"abfahrten",
 		"axum",
 		"chrono",
-		"dotenvy",
 		"dotenv",
-		"tokio",
+		"dotenvy",
+		"pathbuf",
+		"reqwest",
 		"thiserror",
-		"unicode",
-		"pathbuf"
+		"tokio",
+		"unicode"
 	]
 }

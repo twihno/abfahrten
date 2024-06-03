@@ -3,32 +3,25 @@ pub mod station;
 
 use chrono::TimeZone;
 use reqwest::Client;
-use thiserror::Error;
 
-use self::departure::DepartureList;
+use crate::util::exit::exit_critical;
 
-pub struct Station {
-	pub display_name: String,
-	pub id: String,
-}
+use self::{
+	departure::DepartureList,
+	station::{Station, StationAddError},
+};
 
-#[derive(Error, Debug)]
-pub enum StationAddError {
-	#[error("Station not found")]
-	StationNotFound,
-	#[error("Multiple Stations available. Not possible to determine the desired station.")]
-	MultipleStationsFound,
-}
+use super::de::mvv::MvvProvider;
 
 pub struct ProviderConfig {
-	retry_count: isize,
-	reqwest_client: Client,
+	pub retry_count: isize,
+	pub reqwest_client: Client,
 }
 
 impl ProviderConfig {
-	fn new(retry_count: isize) -> Result<ProviderConfig, ()> {
+	fn new(retry_count: isize) -> Result<ProviderConfig, String> {
 		if retry_count < 0 {
-			return Err(());
+			return Err(format!("Invalid retry_count: {retry_count} < 0"));
 		}
 
 		let client = Client::new();
@@ -53,4 +46,18 @@ pub trait DepartureProvider {
 
 	// TODO
 	fn get_departures<Tz: TimeZone>(station_id: &str, timezone: Tz) -> DepartureList<Tz>;
+}
+
+pub async fn ruuun() {
+	let conf = match ProviderConfig::new(3) {
+		Err(err) => exit_critical(&err, true),
+		Ok(val) => val,
+	};
+
+	let mvv_provider = MvvProvider::new(&conf);
+
+	match mvv_provider.search_stations("Marienplatz").await {
+		Ok(val) => println!("{:?}", val),
+		Err(err) => println!("ERROR: {err}"),
+	}
 }

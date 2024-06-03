@@ -1,7 +1,7 @@
 use std::process::exit;
 use tracing::error;
 
-use crate::util::simple_con_log::{con_crit_error, fmt_crit_error};
+use crate::util::simple_con_log::{con_crit_error, fmt_crit_error_one_line};
 
 /// Terminates the program in the event of a critical error.
 ///
@@ -11,9 +11,8 @@ use crate::util::simple_con_log::{con_crit_error, fmt_crit_error};
 /// 	with the status code `1`.
 pub fn exit_critical(msg: &str, panic: bool) -> ! {
 	if panic {
-		let fmt_msg = fmt_crit_error(msg);
-		error!(msg);
-		panic!("{}", fmt_msg);
+		con_crit_error(msg);
+		panic!("{}", fmt_crit_error_one_line(msg));
 	}
 
 	error!(msg);

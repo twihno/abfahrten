@@ -1,7 +1,9 @@
 pub mod base_config;
+pub mod endpoints;
 pub mod env;
 pub mod error;
 pub mod exit;
 pub mod serve;
+pub mod service_config;
 pub mod simple_con_log;
 pub mod tracing;

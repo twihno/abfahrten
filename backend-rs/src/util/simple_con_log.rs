@@ -1,18 +1,23 @@
-use nu_ansi_term::Color::{Blue, Red, Yellow};
+//! Simple formatted logging to stdout/stderr
+use nu_ansi_term::Color::{self, Blue, Red, Yellow};
 
+/// Log info to stdout
 pub fn con_info(text: &str) {
-	println!("{} {}", Blue.bold().paint("[INFO]"), text);
+	print_to_con("Info", Blue, false, text, Stream::Stdout)
 }
 
+/// Log warning to stderr
 pub fn con_warning(text: &str) {
-	println!("{} {}", Yellow.bold().paint("[WARNING]"), text);
+	print_to_con("WARNING", Yellow, false, text, Stream::Stderr)
 }
 
+/// Log error to stderr
 pub fn con_error(text: &str) {
-	eprintln!("{} {}", Red.bold().paint("[ERROR]"), text);
+	print_to_con("ERROR", Red, false, text, Stream::Stderr)
 }
 
-pub fn fmt_crit_error(text: &str) -> String {
+/// Format
+pub fn fmt_crit_error_one_line(text: &str) -> String {
 	format!(
 		"{} {}",
 		Red.bold().underline().paint("[CRITICAL ERROR]"),
@@ -21,5 +26,54 @@ pub fn fmt_crit_error(text: &str) -> String {
 }
 
 pub fn con_crit_error(text: &str) {
-	eprintln!("{}", fmt_crit_error(text));
+	print_to_con("CRITICAL ERROR", Red, true, text, Stream::Stderr)
+}
+
+enum Stream {
+	Stdout,
+	Stderr,
+}
+
+fn print_to_con(prefix_text: &str, color: Color, underlined: bool, text: &str, stream: Stream) {
+	let mut prefix_style = color.bold();
+
+	let current_time = chrono::Utc::now().to_rfc3339();
+
+	if underlined {
+		prefix_style = prefix_style.underline();
+	}
+
+	let prefix_text_formatted = format!(
+		"{} {}",
+		current_time,
+		prefix_style.paint(format!("[{prefix_text}]"))
+	);
+
+	let prefix_empty_line = str::repeat(" ", prefix_text_formatted.len());
+
+	let mut lines = text.lines();
+
+	let print_method = match stream {
+		Stream::Stderr => print_stderr,
+		Stream::Stdout => print_stdout,
+	};
+
+	let first_line = match lines.next() {
+		None => "",
+		Some(val) => val,
+	};
+
+	print_method(&format!("{prefix_text_formatted} {first_line}"));
+
+	for line in lines {
+		print_method(&format!("{prefix_empty_line}{line}"));
+	}
+}
+
+fn print_stdout(text: &str) {
+	println!("{text}");
+}
+
+fn print_stderr(text: &str) {
+	eprintln!("{text}");
 }
