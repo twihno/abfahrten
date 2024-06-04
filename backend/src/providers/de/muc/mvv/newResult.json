@@ -1,0 +1,17 @@
+{
+  "line": {
+    "number": "U6",
+    "symbol": "010U6.svg",
+    "direction": "Klinikum Großhadern",
+    "stateless": "swm:010U6:G:H:013",
+    "name": "U-Bahn"
+  },
+  "direction": "Klinikum Großhadern",
+  "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+  "track": "Gleis 2",
+  "departureDate": "20230130",
+  "departurePlanned": "12:36",
+  "departureLive": "12:38",
+  "inTime": false,
+  "notifications": []
+}

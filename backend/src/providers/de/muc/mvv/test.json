@@ -1,0 +1,474 @@
+{
+  "departures": [
+    {
+      "direction": "Tutzing",
+      "lineId": "ddb:92M06: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:23:00.000+01:00",
+      "departureLive": "2023-01-30T14:23:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Laimer Platz",
+      "lineId": "swm:010U5:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:23:00.000+01:00",
+      "departureLive": "2023-01-30T14:23:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "Putzbrunn",
+      "lineId": "swm:03055:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:23:00.000+01:00",
+      "departureLive": "2023-01-30T14:23:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Flughafen München",
+      "lineId": "ddb:92M08: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:24:00.000+01:00",
+      "departureLive": "2023-01-30T14:24:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 1
+    },
+    {
+      "direction": "Hauptbahnhof Nord US - Museenlinie",
+      "lineId": "swm:03100:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:24:00.000+01:00",
+      "departureLive": "2023-01-30T14:24:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Wolfratshausen",
+      "lineId": "ddb:92M07: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:25:00.000+01:00",
+      "departureLive": "2023-01-30T14:25:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Leuchtenbergring",
+      "lineId": "ddb:92M01: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:26:00.000+01:00",
+      "departureLive": "2023-01-30T14:26:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Leuchtenbergring",
+      "lineId": "ddb:92M01: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:26:00.000+01:00",
+      "departureLive": "2023-01-30T14:26:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Lorettoplatz",
+      "lineId": "swm:03054:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:26:00.000+01:00",
+      "departureLive": "2023-01-30T14:26:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 3
+    },
+    {
+      "direction": "Neuperlach Süd",
+      "lineId": "swm:010U5:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:27:00.000+01:00",
+      "departureLive": "2023-01-30T14:27:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "CityRing via Giselastraße U - Hauptbahnhof U S",
+      "lineId": "swm:03068:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:27:00.000+01:00",
+      "departureLive": "2023-01-30T14:27:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Expressbus Harras U S",
+      "lineId": "swm:03X30:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:27:00.000+01:00",
+      "departureLive": "2023-01-30T14:27:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 4
+    },
+    {
+      "direction": "Expressbus Arabellapark",
+      "lineId": "swm:03X30:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:28:00.000+01:00",
+      "departureLive": "2023-01-30T14:28:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 4
+    },
+    {
+      "direction": "Trudering",
+      "lineId": "ddb:92M04: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:28:00.000+01:00",
+      "departureLive": "2023-01-30T14:28:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Laimer Platz",
+      "lineId": "swm:010U5:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:28:00.000+01:00",
+      "departureLive": "2023-01-30T14:28:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "Mammendorf",
+      "lineId": "ddb:92M03: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:29:00.000+01:00",
+      "departureLive": "2023-01-30T14:29:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Rotkreuzplatz U",
+      "lineId": "swm:03062:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:29:00.000+01:00",
+      "departureLive": "2023-01-30T14:29:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Waldperlach",
+      "lineId": "swm:03055:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:29:00.000+01:00",
+      "departureLive": "2023-01-30T14:29:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Westfriedhof U",
+      "lineId": "swm:02021:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:30:00.000+01:00",
+      "departureLive": "2023-01-30T14:30:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 2
+    },
+    {
+      "direction": "Taufkirchen, Lilienthalstraße",
+      "lineId": "mvv:20200:X:H:s23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:30:00.000+01:00",
+      "departureLive": "2023-01-30T14:30:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 4
+    },
+    {
+      "direction": "Fasangarten Bf. S",
+      "lineId": "swm:03145:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:30:00.000+01:00",
+      "departureLive": "2023-01-30T14:30:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "CityRing via Silberhornstraße U - Hauptbahnhof Nord S",
+      "lineId": "swm:03058:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:31:00.000+01:00",
+      "departureLive": "2023-01-30T14:31:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 3
+    },
+    {
+      "direction": "St.-Veit-Straße",
+      "lineId": "swm:02021:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:31:00.000+01:00",
+      "departureLive": "2023-01-30T14:31:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 2
+    },
+    {
+      "direction": "Münchner Freiheit U",
+      "lineId": "swm:03054:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:31:00.000+01:00",
+      "departureLive": "2023-01-30T14:31:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 3
+    },
+    {
+      "direction": "Dachau Bahnhof",
+      "lineId": "ddb:92M02: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:31:00.000+01:00",
+      "departureLive": "2023-01-30T14:31:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Neuperlach Süd",
+      "lineId": "swm:010U5:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:32:00.000+01:00",
+      "departureLive": "2023-01-30T14:32:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "Grafrath",
+      "lineId": "ddb:92M04: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:33:00.000+01:00",
+      "departureLive": "2023-01-30T14:33:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Laimer Platz",
+      "lineId": "swm:010U5:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:33:00.000+01:00",
+      "departureLive": "2023-01-30T14:33:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "Holzkirchen",
+      "lineId": "ddb:92M03: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:34:00.000+01:00",
+      "departureLive": "2023-01-30T14:34:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Flughafen München",
+      "lineId": "ddb:92M01: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:35:00.000+01:00",
+      "departureLive": "2023-01-30T14:35:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Freising",
+      "lineId": "ddb:92M01: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:35:00.000+01:00",
+      "departureLive": "2023-01-30T14:35:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Lorettoplatz",
+      "lineId": "swm:03054:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:36:00.000+01:00",
+      "departureLive": "2023-01-30T14:36:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 3
+    },
+    {
+      "direction": "Waldperlach",
+      "lineId": "swm:03055:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:36:00.000+01:00",
+      "departureLive": "2023-01-30T14:36:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Herrsching",
+      "lineId": "ddb:92M08: :R:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:37:00.000+01:00",
+      "departureLive": "2023-01-30T14:37:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 1
+    },
+    {
+      "direction": "CityRing via Giselastraße U - Hauptbahnhof U S",
+      "lineId": "swm:03068:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:37:00.000+01:00",
+      "departureLive": "2023-01-30T14:37:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 3
+    },
+    {
+      "direction": "Expressbus Harras U S",
+      "lineId": "swm:03X30:G:R:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:37:00.000+01:00",
+      "departureLive": "2023-01-30T14:37:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 4
+    },
+    {
+      "direction": "Neuperlach Süd",
+      "lineId": "swm:010U5:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:37:00.000+01:00",
+      "departureLive": "2023-01-30T14:37:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 0
+    },
+    {
+      "direction": "Grafing Bahnhof",
+      "lineId": "ddb:92M06: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:38:00.000+01:00",
+      "departureLive": "2023-01-30T14:38:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    },
+    {
+      "direction": "Expressbus Arabellapark",
+      "lineId": "swm:03X30:G:H:013",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:38:00.000+01:00",
+      "departureLive": "2023-01-30T14:38:00.000+01:00",
+      "onTime": true,
+      "notification": true,
+      "type": 4
+    },
+    {
+      "direction": "Kreuzstraße",
+      "lineId": "ddb:92M07: :H:j23",
+      "trackLabel": "Gleis",
+      "track": "3",
+      "departurePlanned": "2023-01-30T14:38:00.000+01:00",
+      "departureLive": "2023-01-30T14:38:00.000+01:00",
+      "onTime": true,
+      "notification": false,
+      "type": 1
+    }
+  ],
+  "notifications": [
+    {
+      "text": "Bus 55 - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03055:G:H:013"]
+    },
+    {
+      "text": "S8 - Taktreduzierung und Einsatz von Ergänzungsbussen zwischen Ostbahnhof und Flughafen/Airport (29.01. bis 05.02.2023 sowie 11.02. und 12.02.2023)",
+      "lines": ["ddb:92M08: :H:j23", "ddb:92M08: :R:j23"]
+    },
+    {
+      "text": "Bus 100 - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03100:G:R:013"]
+    },
+    {
+      "text": "Bus 58/68 (CityRing) - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03068:G:H:013"]
+    },
+    {
+      "text": "Bus X30 - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03X30:G:R:013", "swm:03X30:G:H:013"]
+    },
+    {
+      "text": "Bus 62 - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03062:G:R:013"]
+    },
+    {
+      "text": "Bus 145 - Fahrplanänderungen wegen Personalengpässen (Bis auf Weiteres)",
+      "lines": ["swm:03145:G:H:013"]
+    }
+  ]
+}

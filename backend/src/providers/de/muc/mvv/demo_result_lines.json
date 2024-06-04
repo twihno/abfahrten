@@ -1,0 +1,48 @@
+{
+  "error": "",
+  "lines": [
+    {
+      "number": "U6",
+      "symbol": "010U6.svg",
+      "direction": "Klinikum Gro\u00dfhadern",
+      "stateless": "swm:010U6:G:H:013",
+      "name": "U-Bahn"
+    },
+    {
+      "number": "230",
+      "symbol": "19230.svg",
+      "direction": "Haar (S)",
+      "stateless": "mvv:19230: :R:s23",
+      "name": "MVV-Regionalbus"
+    },
+    {
+      "number": "292",
+      "symbol": "19292.svg",
+      "direction": "Oberschlei\u00dfheim, Sonnenstra\u00dfe",
+      "stateless": "mvv:19292: :H:s23",
+      "name": "MVV-Regionalbus"
+    },
+    {
+      "number": "690",
+      "symbol": "690",
+      "direction": "Eching (S) Ost",
+      "stateless": "mvv:19690: :R:s23",
+      "name": "MVV-Regionalbus"
+    },
+    {
+      "number": "X201",
+      "symbol": "20201.svg",
+      "direction": "Dachau (S)",
+      "stateless": "mvv:20201:X:R:s23",
+      "name": "ExpressBus"
+    },
+    {
+      "number": "X660",
+      "symbol": "20660.svg",
+      "direction": "Freising, Weihenstephaner Berg",
+      "stateless": "mvv:20660:X:R:s23",
+      "name": "ExpressBus"
+    }
+  ],
+  "icons": []
+}

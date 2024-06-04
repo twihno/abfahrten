@@ -1,4 +1,4 @@
-import { CompError, ErrorType } from "./errors.ts";
+import { InternalError } from "../base/errors.ts";
 
 export async function getJSON(url: string) {
   let response;
@@ -9,8 +9,7 @@ export async function getJSON(url: string) {
   }
 
   if (!response.ok) {
-    throw new CompError(
-      ErrorType.INTERNAL_ERROR,
+    throw new InternalError(
       `GET URL: "${url}"; ${response.status}: ${response.statusText}`
     );
   }

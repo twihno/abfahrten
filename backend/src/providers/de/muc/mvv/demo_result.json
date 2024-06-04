@@ -1,0 +1,686 @@
+{
+  "error": "",
+  "departures": [
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "07:26",
+      "departureLive": "07:26",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "07:30",
+      "departureLive": "07:30",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "07:33",
+      "departureLive": "07:33",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "07:36",
+      "departureLive": "07:36",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "230",
+        "symbol": "19230.svg",
+        "direction": "Haar (S)",
+        "stateless": "mvv:19230: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Haar (S)",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "07:37",
+      "departureLive": "07:37",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "07:40",
+      "departureLive": "07:40",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X201",
+        "symbol": "20201.svg",
+        "direction": "Dachau (S)",
+        "stateless": "mvv:20201:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Dachau (S)",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "07:40",
+      "departureLive": "07:40",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "07:46",
+      "departureLive": "07:46",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "07:50",
+      "departureLive": "07:50",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "07:53",
+      "departureLive": "07:53",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "07:56",
+      "departureLive": "07:56",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "230",
+        "symbol": "19230.svg",
+        "direction": "Haar (S)",
+        "stateless": "mvv:19230: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Haar (S)",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "07:57",
+      "departureLive": "07:57",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X201",
+        "symbol": "20201.svg",
+        "direction": "Dachau (S)",
+        "stateless": "mvv:20201:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Dachau (S)",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:00",
+      "departureLive": "08:00",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:00",
+      "departureLive": "08:00",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X660",
+        "symbol": "20660.svg",
+        "direction": "Freising, Weihenstephaner Berg",
+        "stateless": "mvv:20660:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Freising, Weihenstephaner Berg",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:01",
+      "departureLive": "08:01",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:06",
+      "departureLive": "08:06",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:10",
+      "departureLive": "08:10",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:13",
+      "departureLive": "08:13",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:16",
+      "departureLive": "08:16",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "230",
+        "symbol": "19230.svg",
+        "direction": "Haar (S)",
+        "stateless": "mvv:19230: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Haar (S)",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:17",
+      "departureLive": "08:17",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X201",
+        "symbol": "20201.svg",
+        "direction": "Dachau (S)",
+        "stateless": "mvv:20201:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Dachau (S)",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:20",
+      "departureLive": "08:20",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:20",
+      "departureLive": "08:20",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:26",
+      "departureLive": "08:26",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:30",
+      "departureLive": "08:30",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:33",
+      "departureLive": "08:33",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:36",
+      "departureLive": "08:36",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "230",
+        "symbol": "19230.svg",
+        "direction": "Haar (S)",
+        "stateless": "mvv:19230: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Haar (S)",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:37",
+      "departureLive": "08:37",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X201",
+        "symbol": "20201.svg",
+        "direction": "Dachau (S)",
+        "stateless": "mvv:20201:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Dachau (S)",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:40",
+      "departureLive": "08:40",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:40",
+      "departureLive": "08:40",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X660",
+        "symbol": "20660.svg",
+        "direction": "Freising, Weihenstephaner Berg",
+        "stateless": "mvv:20660:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Freising, Weihenstephaner Berg",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:41",
+      "departureLive": "08:41",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:46",
+      "departureLive": "08:46",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "08:50",
+      "departureLive": "08:50",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:53",
+      "departureLive": "08:53",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "08:56",
+      "departureLive": "08:56",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "230",
+        "symbol": "19230.svg",
+        "direction": "Haar (S)",
+        "stateless": "mvv:19230: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Haar (S)",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "08:57",
+      "departureLive": "08:57",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "09:00",
+      "departureLive": "09:00",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "X201",
+        "symbol": "20201.svg",
+        "direction": "Dachau (S)",
+        "stateless": "mvv:20201:X:R:s23",
+        "name": "ExpressBus"
+      },
+      "direction": "Dachau (S)",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "09:00",
+      "departureLive": "09:00",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 2 Ri Garching",
+      "departureDate": "20230124",
+      "departurePlanned": "09:06",
+      "departureLive": "09:06",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "U6",
+        "symbol": "010U6.svg",
+        "direction": "Klinikum Gro\u00dfhadern",
+        "stateless": "swm:010U6:G:H:013",
+        "name": "U-Bahn"
+      },
+      "direction": "Klinikum Gro\u00dfhadern",
+      "station": { "id": "1000460", "name": "Garching, Forschungszentrum" },
+      "track": "Gleis 1 Ausstieg",
+      "departureDate": "20230124",
+      "departurePlanned": "09:10",
+      "departureLive": "09:10",
+      "inTime": true,
+      "notifications": []
+    },
+    {
+      "line": {
+        "number": "690",
+        "symbol": "690",
+        "direction": "Eching (S) Ost",
+        "stateless": "mvv:19690: :R:s23",
+        "name": "MVV-Regionalbus"
+      },
+      "direction": "Eching (S) Ost",
+      "station": { "id": "1000460", "name": "Garch.,Forschungsz." },
+      "track": "",
+      "departureDate": "20230124",
+      "departurePlanned": "09:13",
+      "departureLive": "09:13",
+      "inTime": true,
+      "notifications": []
+    }
+  ],
+  "notifications": []
+}

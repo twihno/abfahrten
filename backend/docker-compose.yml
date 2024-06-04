@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  backend:
+    image: abfahrten-backend:latest
+    environment:
+      - PORT=8081
+      - BASE_URL=/api
+      - STATIONS=de:muc@de:09184:460;de:muc:mvv@ostbahnhof
+      - FETCH_INTERVAL=180
+    ports:
+      - 8081:8081

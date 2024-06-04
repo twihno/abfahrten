@@ -12,7 +12,7 @@ use crate::util::simple_con_log::{con_crit_error, fmt_crit_error_one_line};
 pub fn exit_critical(msg: &str, panic: bool) -> ! {
 	if panic {
 		con_crit_error(msg);
-		panic!("{}", fmt_crit_error_one_line(msg));
+		panic!("{msg}");
 	}
 
 	error!(msg);

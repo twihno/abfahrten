@@ -15,4 +15,4 @@ USER deno
 WORKDIR /deno-dir
 COPY --chown=deno:deno --from=builder /abfahrten /deno-dir
 
-CMD ["run","--no-remote","--import-map=vendor/import_map.json","--allow-env=PORT,STATIONS,BASE_URL,USE_FIRST_RESULT,FETCH_INTERVAL,CORS", "--allow-read=src/providers/","--allow-net","src/main.ts"]
+CMD ["run","--no-remote","--import-map=vendor/import_map.json","--allow-env=PORT,STATIONS,BASE_URL,USE_FIRST_RESULT,FETCH_INTERVAL,CORS,LOG_LEVEL", "--allow-read=src/providers/","--allow-net","src/main.ts"]
