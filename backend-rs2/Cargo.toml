@@ -1,0 +1,52 @@
+[package]
+name = "backend-rs2"
+version = "0.1.0"
+edition = "2024"
+publish = false
+resolver = "3"
+
+[dependencies]
+clap = { version = "4.5.32", features = [
+  "color",
+  "error-context",
+  "help",
+  "std",
+  "suggestions",
+  "usage",
+  "derive",
+] }
+serde = { version = "1.0.215", features = ["std", "derive"] }
+anyhow = "1.0.94"
+reqwest = { version = "0.12.9", features = [
+  "http2",
+  "rustls-tls",
+  "cookies",
+  "rustls-tls-native-roots",
+  "charset",
+  "json",
+] }
+derive-new = "0.7.0"
+envconfig = "0.11.0"
+serde_json = "1.0.133"
+thiserror = "2.0.6"
+tokio = { version = "1.42.0", features = ["full"] }
+async-trait = "0.1.83"
+chrono = { version = "0.4.39", features = ["std", "serde", "alloc", "clock"] }
+chrono-tz = { version = "0.10.0", features = ["std", "serde"] }
+tracing = { version = "0.1.41", features = [
+  "attributes",
+  "std",
+  "tracing-attributes",
+  "async-await",
+] }
+tracing-subscriber = { version = "0.3.19", features = [
+  "std",
+  "alloc",
+  "env-filter",
+  "fmt",
+  "ansi",
+  "registry",
+] }
+dotenvy = "0.15.7"
+nu-ansi-term = "0.50.1"
+terminal-link = "0.1.0"
