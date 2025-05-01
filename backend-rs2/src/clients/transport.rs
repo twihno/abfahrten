@@ -53,7 +53,7 @@ pub enum TransportType {
 
 impl Display for TransportType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        let displayValue = match self {
+        let display_value = match self {
             TransportType::Tram => "tram",
             TransportType::Train => "train",
             TransportType::UndergroundTrain => "underground train",
@@ -67,14 +67,14 @@ impl Display for TransportType {
             TransportType::Ferry => "ferry",
         };
 
-        write!(f, "{displayValue}")
+        write!(f, "{display_value}")
     }
 }
 
 #[derive(Debug)]
 pub struct Line {
     pub label: String,
-    pub r#type: TransportType,
+    pub r#type: Option<TransportType>,
     pub foreground_color: String,
     pub background_color: String,
     pub rail_replacement_bus_service: bool,
@@ -173,7 +173,11 @@ pub trait TransportProvider: Debug {
     fn get_all_stations(&self) -> &Vec<Station>;
     async fn get_station_schedule(&self, id: &str) -> &Vec<Departure>;
     fn get_theme(&self) -> &Theme;
-    async fn search_station(&self, query: &str) -> Result<Vec<Station>, StationSearchResult>;
+    async fn search_station(
+        &self,
+        query: &str,
+        detailed: bool,
+    ) -> Result<Vec<Station>, StationSearchResult>;
 }
 
 pub fn get_new_provider_by_id(id: &str) -> Option<Box<dyn TransportProvider>> {

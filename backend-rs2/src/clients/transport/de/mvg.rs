@@ -1,10 +1,33 @@
 use async_trait::async_trait;
+use futures::FutureExt;
+use reqwest::Client;
 use serde::Deserialize;
+use tracing::error;
 
 use crate::clients::transport::{
-    Departure, MapCoordinate, Station, StationSearchResult, TransportProvider, TransportType,
+    Departure, Line, MapCoordinate, Station, StationSearchResult, TransportProvider, TransportType,
     themes::Theme,
 };
+
+#[derive(Deserialize, Debug)]
+struct MvgLine {
+    label: String,
+    #[serde(rename = "transportType")]
+    transport_type: String,
+    sev: bool,
+}
+
+impl From<&MvgLine> for Line {
+    fn from(value: &MvgLine) -> Self {
+        Line {
+            label: value.label.clone(),
+            r#type: convert_mvg_transport_type(&value.transport_type),
+            rail_replacement_bus_service: value.sev,
+            background_color: String::from("#"),
+            foreground_color: String::from("#"),
+        }
+    }
+}
 
 #[derive(Deserialize, Debug)]
 struct MvgLocation {
@@ -16,6 +39,12 @@ struct MvgLocation {
     global_id: String,
     #[serde(rename = "transportTypes")]
     transport_types: Vec<String>,
+}
+
+#[derive(Debug)]
+struct MvgLineFetchJob<'a> {
+    location: &'a mut MvgLocation,
+    // job: Future<()>,
 }
 
 fn convert_mvg_transport_type(transport_type: &str) -> Option<TransportType> {
@@ -54,6 +83,20 @@ impl From<&MvgLocation> for Station {
     }
 }
 
+impl MvgLocation {
+    async fn fetch_lines(&self, client: &Client) -> anyhow::Result<Vec<Line>> {
+        let url = format!("https://www.mvg.de/api/bgw-pt/v3/lines/{}", self.global_id);
+
+        let response = client.get(url).send().await?;
+
+        let lines: Vec<MvgLine> = response.json().await?;
+
+        let lines: Vec<Line> = lines.iter().map(|line| Line::from(line)).collect();
+
+        Ok(lines)
+    }
+}
+
 #[derive(Debug)]
 pub struct MvgProvider {}
 
@@ -67,21 +110,27 @@ impl MvgProvider {
 #[async_trait]
 impl TransportProvider for MvgProvider {
     async fn add_station(&mut self, name: &str) {
-        panic!("AAA")
+        panic!("Not implemented!")
     }
     fn get_station(&self, id: &str) -> Option<&Station> {
-        panic!("AAA")
+        panic!("Not implemented!")
     }
     fn get_all_stations(&self) -> &Vec<Station> {
-        panic!("AAA")
+        panic!("Not implemented!")
     }
     async fn get_station_schedule(&self, id: &str) -> &Vec<Departure> {
-        panic!("AAA")
+        panic!("Not implemented!")
     }
     fn get_theme(&self) -> &Theme {
-        panic!("AAA")
+        panic!("Not implemented!")
     }
-    async fn search_station(&self, query: &str) -> Result<Vec<Station>, StationSearchResult> {
+    async fn search_station(
+        &self,
+        query: &str,
+        detailed: bool,
+    ) -> Result<Vec<Station>, StationSearchResult> {
+        let client = Client::new();
+
         let url = format!(
             "https://www.mvg.de/api/bgw-pt/v3/locations?query={}&locationTypes=STATION",
             query
@@ -89,17 +138,55 @@ impl TransportProvider for MvgProvider {
 
         println!("{url}");
 
-        let response = reqwest::get(&url)
+        let response = client
+            .get(&url)
+            .send()
             .await
             .map_err(|err| StationSearchResult::FailedFetch(err))?;
-        let locations: Vec<MvgLocation> = response
+        let mut locations: Vec<MvgLocation> = response
             .json()
             .await
             .map_err(|err| StationSearchResult::FailedFetch(err))?;
 
-        Ok(locations
+        let stations: Vec<_> = locations
             .iter()
-            .map(|location| Station::from(location))
-            .collect())
+            .map(|location| {
+                let mut station = Station::from(location);
+                // if detailed {
+                //     location
+                //         .fetch_lines(&client)
+                //         .then(async |lines| match lines {
+                //             Ok(value) => station.available_lines = Some(value),
+                //             Err(err) => {
+                //                 error!("{}", err);
+                //             }
+                //         });
+                // }
+
+                station
+            })
+            .collect();
+
+        // let fetch_jobs: Vec<_> = Vec::with_capacity(locations.len());
+
+        // if detailed {
+        //     let a = locations
+        //         .iter_mut()
+        //         .map(async |location| match location.fetch_lines(&client).await {
+        //             Ok(value) => location.available_lines = Some(value),
+        //             Err(err) => {
+        //                 error!("{}", err);
+        //             }
+        //         })
+        //         .collect();
+
+        //     // for station in stations {
+        //     //     fetch_jobs.push(async || match station.fetch_lines(&client) {});
+        //     // }
+        // }
+
+        // let locations = futures::future::join_all(fetch_jobs).await;
+
+        Ok(stations)
     }
 }

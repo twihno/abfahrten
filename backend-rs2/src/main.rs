@@ -1,5 +1,4 @@
 use clap::{Parser, Subcommand};
-use tracing::{debug, error, info};
 
 use backend_rs2::{search_stations, start_server};
 
@@ -24,6 +23,10 @@ enum Commands {
         /// The provider that should be used
         #[arg(short, long)]
         provider: String,
+
+        /// Detailed output
+        #[arg(short, long)]
+        detailed: bool,
     },
     /// Actions related to the available providers
     Providers {
@@ -45,8 +48,12 @@ async fn main() {
             println!("{config:?}");
         }
         // Search for a station with a specified provider
-        Commands::Search { name, provider } => {
-            search_stations(name, provider).await;
+        Commands::Search {
+            name,
+            provider,
+            detailed,
+        } => {
+            search_stations(name, provider, *detailed).await;
         }
         // Do stuff with the available providers, e.g. list them
         Commands::Providers { list } => {

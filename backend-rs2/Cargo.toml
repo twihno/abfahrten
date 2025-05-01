@@ -50,3 +50,4 @@ tracing-subscriber = { version = "0.3.19", features = [
 dotenvy = "0.15.7"
 nu-ansi-term = "0.50.1"
 terminal-link = "0.1.0"
+futures = "0.3.31"

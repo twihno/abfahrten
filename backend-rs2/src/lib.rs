@@ -32,7 +32,7 @@ pub fn start_server() -> AppConfig {
 }
 
 /// Search for the matching stations with the given provider
-pub async fn search_stations(name: &str, provider_id: &str) {
+pub async fn search_stations(name: &str, provider_id: &str, detailed: bool) {
     if name.is_empty() {
         println!("ERROR: Empty station name");
         exit(1);
@@ -50,7 +50,7 @@ pub async fn search_stations(name: &str, provider_id: &str) {
 
     println!("Searching for \"{name}\" with \"{provider_id}\"");
 
-    let station_list = match provider.search_station(name).await {
+    let station_list = match provider.search_station(name, detailed).await {
         Ok(value) => value,
         Err(err) => {
             println!("Error, couldn't get stations");
