@@ -1,0 +1,175 @@
+openapi: 3.0.3
+info:
+  title: Transport Station API
+  version: 1.0.0
+  description: API to retrieve station information and departures for public transport systems.
+
+servers:
+  - url: https://api.example.com/v1
+
+components:
+  schemas:
+    TransportType:
+      type: string
+      enum:
+        - tram
+        - train
+        - underground train
+        - suburban train
+        - regional train
+        - long distance train
+        - highspeed train
+        - bus
+        - rapid transit bus
+        - long distance bus
+        - ferry
+
+    Line:
+      type: object
+      properties:
+        id:
+          type: string
+          description: id of the line
+        colorForeground:
+          type: string
+          description: Foreground color for the line (hex or color name)
+        colorBackground:
+          type: string
+          description: Background color for the line (hex or color name)
+        type:
+          $ref: "#/components/schemas/TransportType"
+      required:
+        - colorForeground
+        - colorBackground
+        - type
+        - id
+
+    LinesMap:
+      type: object
+      additionalProperties:
+        $ref: "#/components/schemas/Line"
+      description: Map of line IDs to line properties
+
+    StationInfoResponse:
+      type: object
+      properties:
+        stationId:
+          type: string
+        lines:
+          $ref: "#/components/schemas/LinesMap"
+      required:
+        - stationId
+        - lines
+
+    Departure:
+      type: object
+      properties:
+        destination:
+          type: string
+        line:
+          type: string
+          description: Line ID
+        isLive:
+          type: boolean
+        isSEV:
+          type: boolean
+        platformLabel:
+          type: string
+        platformNumber:
+          type: integer
+        plannedTimeStamp:
+          type: string
+          format: date-time
+        liveTimeStamp:
+          type: string
+          format: date-time
+          nullable: true
+        hasWarning:
+          type: boolean
+      required:
+        - destination
+        - line
+        - isLive
+        - isSEV
+        - platformLabel
+        - platformNumber
+        - plannedTimeStamp
+        - hasWarning
+
+    DepartureList:
+      type: array
+      items:
+        $ref: "#/components/schemas/Departure"
+
+    Warning:
+      type: object
+      properties:
+        content:
+          type: string
+        lines:
+          type: array
+          items:
+            type: string
+            description: Line ID the warning applies to
+      required:
+        - content
+        - lines
+
+    WarningList:
+      type: array
+      items:
+        $ref: "#/components/schemas/Warning"
+
+    DeparturesResponse:
+      type: object
+      properties:
+        departures:
+          $ref: "#/components/schemas/DepartureList"
+        warnings:
+          $ref: "#/components/schemas/WarningList"
+      required:
+        - departures
+        - warnings
+
+paths:
+  /stationInfo:
+    get:
+      summary: Get station information
+      description: Returns line information for the given station.
+      parameters:
+        - in: query
+          name: stationId
+          schema:
+            type: string
+          required: true
+          description: ID of the station
+      responses:
+        "200":
+          description: Station information
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StationInfoResponse"
+        "400":
+          description: Missing or invalid stationId
+
+  /departures:
+    get:
+      summary: Get departures for a station
+      description: Returns a list of departures and warnings for the given station.
+      parameters:
+        - in: query
+          name: stationId
+          schema:
+            type: string
+          required: true
+          description: ID of the station
+      responses:
+        "200":
+          description: Departures and warnings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DeparturesResponse"
+        "400":
+          description: Missing or invalid stationId
