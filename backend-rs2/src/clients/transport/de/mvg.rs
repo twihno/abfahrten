@@ -1,10 +1,17 @@
+use std::collections::HashMap;
+
+use anyhow::bail;
 use async_trait::async_trait;
 use reqwest::Client;
 use serde::Deserialize;
+use tracing::warn;
 
-use crate::clients::transport::{
-    Departure, Line, MapCoordinate, Station, StationSearchResult, TransportProvider, TransportType,
-    themes::Theme,
+use crate::{
+    clients::transport::{
+        Departure, Line, MapCoordinate, Station, StationsSearchError, TransportProvider,
+        TransportType, themes::Theme,
+    },
+    search_stations,
 };
 
 #[derive(Deserialize, Debug)]
@@ -96,39 +103,88 @@ impl MvgLocation {
 }
 
 #[derive(Debug)]
-pub struct MvgProvider {}
+pub struct MvgProvider {
+    stations: HashMap<String, Station>,
+    depatures: HashMap<String, Departure>,
+    client: Client,
+}
 
 impl MvgProvider {
     #[must_use]
     pub fn new() -> Self {
-        MvgProvider {}
+        MvgProvider {
+            stations: HashMap::new(),
+            client: Client::new(),
+            depatures: HashMap::new(),
+        }
     }
+    async fn fetch_depatures_for_station(&mut self, id: &str) -> {
+     {
+        let url = format!(
+            // "https://www.mvg.de/api/bgw-pt/v3/locations?query={}&locationTypes=STATION",
+            "https://www.mvg.de/api/bgw-pt/v3/departures?globalId=de:09162:670&limit=100&transportTypes=UBAHN,REGIONAL_BUS,BUS,TRAM,SBAHN",
+            query
+        );
+
+        println!("{url}");
+
+        let response = self
+            .client
+            .get(&url)
+            .send()
+            .await
+            .map_err(|err| StationsSearchError::FailedFetch(err))?;
+        let mut locations: Vec<MvgLocation> = response
+            .json()
+            .await
+            .map_err(|err| StationsSearchError::FailedFetch(err))?;
+
+        let stations: Vec<_> = locations
+            .iter()
+            .map(|location| {
+                let mut station = Station::from(location);
+
+                station
+            })
+            .collect();
+
+
+
+        Ok(stations)
+    }
+
 }
 
 #[async_trait]
 impl TransportProvider for MvgProvider {
-    async fn add_station(&mut self, name: &str) {
-        panic!("Not implemented!")
+    async fn add_station(&mut self, name: &str) -> anyhow::Result<()> {
+        let api_station_result = self.search_stations(name, false).await?;
+        if api_station_result.len() > 1 {
+            warn!("More than one station found");
+        }
+        if let Some(station) = api_station_result.into_iter().next() {
+            self.stations.insert(name.to_string(), station);
+            return Result::Ok(());
+        }
+        bail!("No matching station found")
     }
     fn get_station(&self, id: &str) -> Option<&Station> {
-        panic!("Not implemented!")
+        self.stations.get(id)
     }
-    fn get_all_stations(&self) -> &Vec<Station> {
-        panic!("Not implemented!")
+    fn get_all_stations(&self) -> Vec<&Station> {
+        self.stations.values().collect()
     }
     async fn get_station_schedule(&self, id: &str) -> &Vec<Departure> {
-        panic!("Not implemented!")
+
     }
     fn get_theme(&self) -> &Theme {
         panic!("Not implemented!")
     }
-    async fn search_station(
+    async fn search_stations(
         &self,
         query: &str,
         detailed: bool,
-    ) -> Result<Vec<Station>, StationSearchResult> {
-        let client = Client::new();
-
+    ) -> Result<Vec<Station>, StationsSearchError> {
         let url = format!(
             "https://www.mvg.de/api/bgw-pt/v3/locations?query={}&locationTypes=STATION",
             query
@@ -136,15 +192,16 @@ impl TransportProvider for MvgProvider {
 
         println!("{url}");
 
-        let response = client
+        let response = self
+            .client
             .get(&url)
             .send()
             .await
-            .map_err(|err| StationSearchResult::FailedFetch(err))?;
+            .map_err(|err| StationsSearchError::FailedFetch(err))?;
         let mut locations: Vec<MvgLocation> = response
             .json()
             .await
-            .map_err(|err| StationSearchResult::FailedFetch(err))?;
+            .map_err(|err| StationsSearchError::FailedFetch(err))?;
 
         let stations: Vec<_> = locations
             .iter()
@@ -152,7 +209,7 @@ impl TransportProvider for MvgProvider {
                 let mut station = Station::from(location);
                 // if detailed {
                 //     location
-                //         .fetch_lines(&client)
+                //         .fetch_lines(&self.client)
                 //         .then(async |lines| match lines {
                 //             Ok(value) => station.available_lines = Some(value),
                 //             Err(err) => {
@@ -170,7 +227,7 @@ impl TransportProvider for MvgProvider {
         // if detailed {
         //     let a = locations
         //         .iter_mut()
-        //         .map(async |location| match location.fetch_lines(&client).await {
+        //         .map(async |location| match location.fetch_lines(&self.client).await {
         //             Ok(value) => location.available_lines = Some(value),
         //             Err(err) => {
         //                 error!("{}", err);
@@ -179,7 +236,7 @@ impl TransportProvider for MvgProvider {
         //         .collect();
 
         //     // for station in stations {
-        //     //     fetch_jobs.push(async || match station.fetch_lines(&client) {});
+        //     //     fetch_jobs.push(async || match station.fetch_lines(&self.client) {});
         //     // }
         // }
 

@@ -11,7 +11,7 @@ use thiserror::Error;
 pub mod de;
 pub mod themes;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct MapCoordinate {
     pub latitude: f64,
     pub longitude: f64,
@@ -36,7 +36,7 @@ impl Display for MapCoordinate {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum TransportType {
     Tram,
     Train,
@@ -71,7 +71,7 @@ impl Display for TransportType {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Line {
     pub label: String,
     pub r#type: Option<TransportType>,
@@ -80,7 +80,7 @@ pub struct Line {
     pub rail_replacement_bus_service: bool,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Station {
     pub name: String,
     pub id: String,
@@ -159,7 +159,7 @@ pub struct Departure {
 }
 
 #[derive(Error, Debug)]
-pub enum StationSearchResult {
+pub enum StationsSearchError {
     #[error("Failed to fetch data from the server")]
     FailedFetch(reqwest::Error),
     #[error("Unknown provider")]
@@ -168,16 +168,16 @@ pub enum StationSearchResult {
 
 #[async_trait]
 pub trait TransportProvider: Debug {
-    async fn add_station(&mut self, name: &str);
+    async fn add_station(&mut self, name: &str) -> anyhow::Result<()>;
     fn get_station(&self, id: &str) -> Option<&Station>;
-    fn get_all_stations(&self) -> &Vec<Station>;
+    fn get_all_stations(&self) -> Vec<&Station>;
     async fn get_station_schedule(&self, id: &str) -> &Vec<Departure>;
     fn get_theme(&self) -> &Theme;
-    async fn search_station(
+    async fn search_stations(
         &self,
         query: &str,
         detailed: bool,
-    ) -> Result<Vec<Station>, StationSearchResult>;
+    ) -> Result<Vec<Station>, StationsSearchError>;
 }
 
 pub fn get_new_provider_by_id(id: &str) -> Option<Box<dyn TransportProvider>> {

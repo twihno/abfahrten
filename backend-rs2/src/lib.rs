@@ -51,7 +51,7 @@ pub async fn search_stations(name: &str, provider_id: &str, detailed: bool) {
 
     println!("Searching for \"{name}\" with \"{provider_id}\"");
 
-    let station_list = match provider.search_station(name, detailed).await {
+    let station_list = match provider.search_stations(name, detailed).await {
         Ok(value) => value,
         Err(err) => {
             println!("Error, couldn't get stations");
