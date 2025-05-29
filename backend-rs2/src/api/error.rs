@@ -1,10 +1,6 @@
 //! Handlers for errors in api calls
 
-use axum::{
-    extract::{Host, OriginalUri},
-    http::StatusCode,
-    response::Html,
-};
+use axum::{extract::OriginalUri, http::StatusCode, response::Html};
 use tracing::error;
 
 macro_rules! asset {
@@ -17,8 +13,8 @@ macro_rules! asset {
 pub type ErrorPage = (StatusCode, Html<&'static str>);
 
 /// Handler for the default fallback: 404 - Page not found
-pub async fn handle_not_found(Host(host): Host, OriginalUri(uri): OriginalUri) -> ErrorPage {
-    error!("404 - Page not found: \"{}{:?}\"", host, uri);
+pub async fn handle_not_found(OriginalUri(uri): OriginalUri) -> ErrorPage {
+    error!("404 - Page not found: \"{:?}\"", uri);
     get_404_response()
 }
 

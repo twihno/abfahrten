@@ -1,6 +1,10 @@
+use std::sync::Arc;
+
 use clap::{Parser, Subcommand};
 
-use backend_rs2::{search_stations, start_server};
+use backend_rs2::{api::start_server, load_config, search_stations};
+use tokio::task::JoinSet;
+use tracing::debug;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -43,9 +47,14 @@ async fn main() {
     match &cli.command {
         // Start the cache server with the environment config
         Commands::Start => {
-            let config = start_server();
+            let mut set = JoinSet::new();
 
-            println!("{config:?}");
+            let config = Arc::new(load_config());
+            debug!("{config:?}");
+
+            set.spawn(start_server(config));
+
+            set.join_all().await;
         }
         // Search for a station with a specified provider
         Commands::Search {

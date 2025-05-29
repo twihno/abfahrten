@@ -1,8 +1,6 @@
 use async_trait::async_trait;
-use futures::FutureExt;
 use reqwest::Client;
 use serde::Deserialize;
-use tracing::error;
 
 use crate::clients::transport::{
     Departure, Line, MapCoordinate, Station, StationSearchResult, TransportProvider, TransportType,

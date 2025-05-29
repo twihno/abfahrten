@@ -6,11 +6,11 @@ use envconfig::Envconfig;
 use tracing::{debug, error, info};
 use util::{config::AppConfig, tracing::init_tracing};
 
+pub mod api;
 pub mod clients;
 pub mod util;
-pub mod api;
 
-pub fn start_server() -> AppConfig {
+pub fn load_config() -> AppConfig {
     let env_load_result = dotenv();
 
     init_tracing();
@@ -28,8 +28,6 @@ pub fn start_server() -> AppConfig {
         error!("{err}");
         exit(1);
     });
-
-
 
     config
 }
