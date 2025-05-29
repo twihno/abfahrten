@@ -8,6 +8,7 @@ use util::{config::AppConfig, tracing::init_tracing};
 
 pub mod clients;
 pub mod util;
+pub mod api;
 
 pub fn start_server() -> AppConfig {
     let env_load_result = dotenv();
@@ -27,6 +28,8 @@ pub fn start_server() -> AppConfig {
         error!("{err}");
         exit(1);
     });
+
+
 
     config
 }

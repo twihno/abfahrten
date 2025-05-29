@@ -1,0 +1,3107 @@
+{
+  "data": {
+    "matchPlan": {
+      "__typename": "MatchPlan",
+      "id": "MatchPlan_allianz-arena-de-de_profis_2024-2025",
+      "selectedData": {
+        "__typename": "SelectedData",
+        "competitionData": null,
+        "matchDayData": null,
+        "seasonData": {
+          "__typename": "KeyValue",
+          "key": "2024-2025",
+          "value": "Saison 2024/2025"
+        },
+        "teamData": {
+          "__typename": "KeyValue",
+          "key": "profis",
+          "value": "Herren"
+        }
+      },
+      "matches": [
+        {
+          "__typename": "Match",
+          "id": "6ad7dfff-1001-4d9c-8431-92bc0e882ef5-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "6ad7dfff-1001-4d9c-8431-92bc0e882ef5-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/2-spieltag-fc-bayern-muenchen-sport-club-freiburg-31-08-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456495",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "2",
+              "value": "2. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-09-01T15:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t160",
+            "name": "Sport-Club Freiburg",
+            "nameMedium": "Freiburg",
+            "nameShort": "SCF",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391282/cms/public/images/fcbayern-com/logos/bundesliga/scfreiburg_500x500.png",
+              "alt": "scfreiburg_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/bundesliga/scfreiburg_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "2",
+              "away": "0",
+              "pastPeriod": "(1:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "fedd1e20-5a25-4910-ae82-e044ba088b97-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "fedd1e20-5a25-4910-ae82-e044ba088b97-de_DE",
+              "path": "/de/spiele/allianz-arena/champions-league/2024-2025/fc-bayern-muenchen-dinamo-zagreb-17-09-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2484584",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "champions-league",
+              "value": "Champions League"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "1",
+              "value": "1. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-09-17T19:00:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t394",
+            "name": "Dinamo Zagreb",
+            "nameMedium": "Dinamo Zagreb",
+            "nameShort": "Zagreb",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391384/cms/public/images/fcbayern-com/logos/international/dinamo_zagreb_500x500.png",
+              "alt": "Vereinslogo Dinamo Zagreb",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/international/dinamo_zagreb_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "9",
+              "away": "2",
+              "pastPeriod": "(3:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "0d6c2916-95ce-4846-8510-4e5a9bce5c32-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "0d6c2916-95ce-4846-8510-4e5a9bce5c32-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/5-spieltag-fc-bayern-muenchen-bayer-04-leverkusen-28-09-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456520",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "5",
+              "value": "5. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-09-28T16:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t164",
+            "name": "Bayer 04 Leverkusen",
+            "nameMedium": "Leverkusen",
+            "nameShort": "B04",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1678876497/cms/public/images/fcbayern-com/logos/bundesliga/bayerleverkusen_500x500.png",
+              "alt": "bayerleverkusen_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1678876497/cms/public/images/fcbayern-com/logos/bundesliga/bayerleverkusen_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "1",
+              "away": "1",
+              "pastPeriod": "(1:1)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "216ede2b-383e-44a6-8ee8-61e4f4bc6d95-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "216ede2b-383e-44a6-8ee8-61e4f4bc6d95-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/7-spieltag-fc-bayern-muenchen-vfb-stuttgart-19-10-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456539",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "7",
+              "value": "7. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-10-19T16:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t169",
+            "name": "VfB Stuttgart",
+            "nameMedium": "Stuttgart",
+            "nameShort": "VfB",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601390463/cms/public/images/fcbayern-com/logos/sonstige/vfb_500x500.png",
+              "alt": "vfb_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/sonstige/vfb_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "4",
+              "away": "0",
+              "pastPeriod": "(0:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "5c1bb7fd-c9c2-4669-a014-eac7b50f1579-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "5c1bb7fd-c9c2-4669-a014-eac7b50f1579-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/9-spieltag-fc-bayern-muenchen-1-fc-union-berlin-02-11-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456557",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "9",
+              "value": "9. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-11-02T14:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t816",
+            "name": "1. FC Union Berlin",
+            "nameMedium": "Union Berlin",
+            "nameShort": "FCU",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601390583/cms/public/images/fcbayern-com/logos/sonstige/union_berlin.png",
+              "alt": "union_berlin",
+              "caption": "",
+              "origWidth": 200,
+              "origHeight": 200,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/sonstige/union_berlin.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "3",
+              "away": "0",
+              "pastPeriod": "(2:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "cbfdde8e-63fe-447c-bf48-6147db3c4190-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "cbfdde8e-63fe-447c-bf48-6147db3c4190-de_DE",
+              "path": "/de/spiele/allianz-arena/champions-league/2024-2025/fc-bayern-muenchen-benfica-lissabon-06-11-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2484648",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "champions-league",
+              "value": "Champions League"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "4",
+              "value": "4. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-11-06T20:15:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t251",
+            "name": "Benfica Lissabon",
+            "nameMedium": "Benfica Lissabon",
+            "nameShort": "Benfica",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391378/cms/public/images/fcbayern-com/logos/international/benfica_lissabon_500x500.png",
+              "alt": "Vereinslogo Benfica Lissabon",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/international/benfica_lissabon_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "1",
+              "away": "0",
+              "pastPeriod": "(0:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "3e40209a-ba90-45d4-aaa9-ace3a78522af-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "3e40209a-ba90-45d4-aaa9-ace3a78522af-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/11-spieltag-fc-bayern-muenchen-fc-augsburg-23-11-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456576",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "11",
+              "value": "11. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-11-22T19:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t1772",
+            "name": "FC Augsburg",
+            "nameMedium": "Augsburg",
+            "nameShort": "FCA",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391269/cms/public/images/fcbayern-com/logos/bundesliga/fcaugsburg_500x500.png",
+              "alt": "fcaugsburg_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1605774247/cms/public/images/fcbayern-com/logos/bundesliga/1x1/fcaugsburg_500x500-1x1.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "3",
+              "away": "0",
+              "pastPeriod": "(0:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "83ee0900-5aab-4575-b77e-cd727b644416-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "83ee0900-5aab-4575-b77e-cd727b644416-de_DE",
+              "path": "/de/spiele/allianz-arena/champions-league/2024-2025/fc-bayern-muenchen-paris-saint-germain-26-11-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2484658",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "champions-league",
+              "value": "Champions League"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "5",
+              "value": "5. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-11-26T20:00:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t149",
+            "name": "Paris Saint-Germain",
+            "nameMedium": "Paris",
+            "nameShort": "PSG",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601390419/cms/public/images/fcbayern-com/logos/international/paris-saint-germain.png",
+              "alt": "paris-saint-germain",
+              "caption": "",
+              "origWidth": 400,
+              "origHeight": 400,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/international/paris-saint-germain.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "1",
+              "away": "0",
+              "pastPeriod": "(1:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "10e2473e-f1b1-4eb6-92f6-744df40ed7e6-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "10e2473e-f1b1-4eb6-92f6-744df40ed7e6-de_DE",
+              "path": "/de/spiele/allianz-arena/dfb-pokal/2024-2025/fc-bayern-muenchen-bayer-04-leverkusen-03-12-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2489933",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "dfb-pokal",
+              "value": "DFB-Pokal"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "3",
+              "value": "Achtelfinale"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-12-03T19:45:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t164",
+            "name": "Bayer 04 Leverkusen",
+            "nameMedium": "Leverkusen",
+            "nameShort": "B04",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1678876497/cms/public/images/fcbayern-com/logos/bundesliga/bayerleverkusen_500x500.png",
+              "alt": "bayerleverkusen_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1678876497/cms/public/images/fcbayern-com/logos/bundesliga/bayerleverkusen_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "0",
+              "away": "1",
+              "pastPeriod": "(0:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "cbb6038c-eeee-4b7b-9adc-71c0d0274eec-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "cbb6038c-eeee-4b7b-9adc-71c0d0274eec-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/13-spieltag-fc-bayern-muenchen-1-fc-heidenheim-1846-07-12-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456594",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "13",
+              "value": "13. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-12-07T14:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": 75000,
+          "away": {
+            "teamId": "opta-t2891",
+            "name": "1. FC Heidenheim 1846",
+            "nameMedium": "Heidenheim",
+            "nameShort": "HDH",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601390524/cms/public/images/fcbayern-com/logos/sonstige/heidenheim.png",
+              "alt": "heidenheim",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/sonstige/heidenheim.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "RESULT",
+            "matchPeriod": "SECOND_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "4",
+              "away": "2",
+              "pastPeriod": "(1:0)",
+              "__typename": "MatchScore"
+            },
+            "completed": true,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "08455346-7fd8-486e-8fcf-6e8019200b5a-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "08455346-7fd8-486e-8fcf-6e8019200b5a-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/15-spieltag-fc-bayern-muenchen-rb-leipzig-21-12-2024/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456612",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "15",
+              "value": "15. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2024-12-20T19:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t6339",
+            "name": "RB Leipzig",
+            "nameMedium": "Leipzig",
+            "nameShort": "RBL",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1684823093/cms/public/images/fcbayern-com/logos/bundesliga/rbleipzig_500x500.png",
+              "alt": "rbleipzig_500x500",
+              "caption": "",
+              "origWidth": 827,
+              "origHeight": 827,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1684823093/cms/public/images/fcbayern-com/logos/bundesliga/rbleipzig_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "ca348443-180f-473b-990a-51f25f1e4542-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "ca348443-180f-473b-990a-51f25f1e4542-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/17-spieltag-fc-bayern-muenchen-tsg-hoffenheim-15-01-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456630",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "17",
+              "value": "17. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-01-15T19:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t1902",
+            "name": "TSG Hoffenheim",
+            "nameMedium": "Hoffenheim",
+            "nameShort": "TSG",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391284/cms/public/images/fcbayern-com/logos/bundesliga/hoffenheim_500x500.png",
+              "alt": "hoffenheim_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/bundesliga/hoffenheim_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "ebb33d36-cb11-4353-aa8b-7412694540c8-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "ebb33d36-cb11-4353-aa8b-7412694540c8-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/18-spieltag-fc-bayern-muenchen-vfl-wolfsburg-18-01-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456639",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "18",
+              "value": "18. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-01-18T14:30:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t172",
+            "name": "VfL Wolfsburg",
+            "nameMedium": "Wolfsburg",
+            "nameShort": "WOL",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391280/cms/public/images/fcbayern-com/logos/bundesliga/vflwolfsburg_500x500.png",
+              "alt": "vflwolfsburg_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/bundesliga/vflwolfsburg_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "3a0e5b41-1e52-41f9-8090-7c343b1485c9-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "3a0e5b41-1e52-41f9-8090-7c343b1485c9-de_DE",
+              "path": "/de/spiele/allianz-arena/champions-league/2024-2025/fc-bayern-muenchen-sk-slovan-bratislava-29-01-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2484714",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "champions-league",
+              "value": "Champions League"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "8",
+              "value": "8. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-01-29T20:00:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t211",
+            "name": "ŠK Slovan Bratislava",
+            "nameMedium": "Slovan Bratislava",
+            "nameShort": "Bratislava",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1724929094/cms/public/images/fcbayern-com/logos/international/slovan-bratislava.png",
+              "alt": "Vereinslogo Slovan Bratislava",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1724929094/cms/public/images/fcbayern-com/logos/international/slovan-bratislava.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "3e0ec595-340c-4687-8ee0-5545f2fa29c1-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "3e0ec595-340c-4687-8ee0-5545f2fa29c1-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/20-spieltag-fc-bayern-muenchen-holstein-kiel-01-02-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456657",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "20",
+              "value": "20. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-01-30T23:00:00Z",
+            "endDate": "2025-02-01T23:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t2881",
+            "name": "Holstein Kiel",
+            "nameMedium": "Kiel",
+            "nameShort": "Kiel",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601390555/cms/public/images/fcbayern-com/logos/sonstige/holstein-kiel.png",
+              "alt": "holstein-kiel",
+              "caption": "",
+              "origWidth": 2000,
+              "origHeight": 2000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/sonstige/holstein-kiel.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "c519a20c-efe7-40c0-abb9-89141a403197-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "c519a20c-efe7-40c0-abb9-89141a403197-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/21-spieltag-fc-bayern-muenchen-sv-werder-bremen-08-02-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456664",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "21",
+              "value": "21. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-02-06T23:00:00Z",
+            "endDate": "2025-02-08T23:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t171",
+            "name": "SV Werder Bremen",
+            "nameMedium": "Bremen",
+            "nameShort": "SVW",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391263/cms/public/images/fcbayern-com/logos/bundesliga/werderbremen_500x500.png",
+              "alt": "werderbremen_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/bundesliga/werderbremen_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "159252d3-9b84-4d47-a888-9a228937f566-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "159252d3-9b84-4d47-a888-9a228937f566-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/23-spieltag-fc-bayern-muenchen-eintracht-frankfurt-22-02-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456682",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "23",
+              "value": "23. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-02-20T23:00:00Z",
+            "endDate": "2025-02-22T23:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t159",
+            "name": "Eintracht Frankfurt",
+            "nameMedium": "Frankfurt",
+            "nameShort": "SGE",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391268/cms/public/images/fcbayern-com/logos/bundesliga/eintrachtfrankfurt_500x500.png",
+              "alt": "eintrachtfrankfurt_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/logos/bundesliga/eintrachtfrankfurt_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "af68c63e-6d9f-4834-8128-78de25c5ebc7-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "af68c63e-6d9f-4834-8128-78de25c5ebc7-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/25-spieltag-fc-bayern-muenchen-vfl-bochum-1848-08-03-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456701",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "25",
+              "value": "25. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-03-06T23:00:00Z",
+            "endDate": "2025-03-08T23:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t431",
+            "name": "VfL Bochum 1848",
+            "nameMedium": "Bochum",
+            "nameShort": "BOC",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391291/cms/public/images/fcbayern-com/logos/bundesliga/137px-vfl_bochum_logo.png",
+              "alt": "137px-vfl_bochum_logo",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1605777596/cms/public/images/fcbayern-com/logos/bundesliga/1x1/137px-vfl_bochum_logo-1x1.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "0d8dff24-2dfc-43ed-8343-d83f08af9bf6-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "0d8dff24-2dfc-43ed-8343-d83f08af9bf6-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/27-spieltag-fc-bayern-muenchen-fc-st.-pauli-29-03-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456719",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "27",
+              "value": "27. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-03-27T23:00:00Z",
+            "endDate": "2025-03-29T23:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t680",
+            "name": "FC St. Pauli",
+            "nameMedium": "Pauli",
+            "nameShort": "FCSP",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1720101674/cms/public/images/fcbayern-com/logos/sonstige/fc-st-pauli.png",
+              "alt": "fc-st-pauli",
+              "caption": "",
+              "origWidth": 250,
+              "origHeight": 250,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1720101674/cms/public/images/fcbayern-com/logos/sonstige/fc-st-pauli.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 4194,
+                    "y": 4194,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "d430d4a7-77a9-4b3c-b869-e186ae62cede-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "d430d4a7-77a9-4b3c-b869-e186ae62cede-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/29-spieltag-fc-bayern-muenchen-borussia-dortmund-12-04-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456738",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "29",
+              "value": "29. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-04-10T22:00:00Z",
+            "endDate": "2025-04-12T22:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t157",
+            "name": "Borussia Dortmund",
+            "nameMedium": "Dortmund",
+            "nameShort": "BVB",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601373768/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/bvb500x500.png",
+              "alt": "bvb500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/bvb500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "991da5b8-427f-43d3-9d73-621ecdf0007c-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "991da5b8-427f-43d3-9d73-621ecdf0007c-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/31-spieltag-fc-bayern-muenchen-1-fsv-mainz-05-26-04-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456756",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "31",
+              "value": "31. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-04-24T22:00:00Z",
+            "endDate": "2025-04-26T22:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t810",
+            "name": "1. FSV Mainz 05",
+            "nameMedium": "Mainz",
+            "nameShort": "M05",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391278/cms/public/images/fcbayern-com/logos/bundesliga/fsvmainz05_500x500.png",
+              "alt": "fsvmainz05_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1605774237/cms/public/images/fcbayern-com/logos/bundesliga/1x1/fsvmainz05_500x500-1x1.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "d40ef915-7a63-40e9-a51e-9e54be3914a4-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "d40ef915-7a63-40e9-a51e-9e54be3914a4-de_DE",
+              "path": "/de/spiele/allianz-arena/bundesliga/2024-2025/33-spieltag-fc-bayern-muenchen-borussia-moenchengladbach-10-05-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "opta-2456774",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "bundesliga",
+              "value": "Bundesliga"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "33",
+              "value": "33. Spieltag"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "profis",
+              "value": "Herren"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-05-08T22:00:00Z",
+            "endDate": "2025-05-10T22:00:00Z",
+            "__typename": "ScheduleTime"
+          },
+          "stadium": "Allianz Arena, München",
+          "attendance": null,
+          "away": {
+            "teamId": "opta-t683",
+            "name": "Borussia Mönchengladbach",
+            "nameMedium": "Gladbach",
+            "nameShort": "BMG",
+            "ownTeam": false,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1601391267/cms/public/images/fcbayern-com/logos/bundesliga/borussiamoenchengladbach_500x500.png",
+              "alt": "borussiamoenchengladbach_500x500",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1625139087/cms/public/images/fcbayern-com/logos/bundesliga/borussiamoenchengladbach_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "opta-t156",
+            "name": "FC Bayern München",
+            "nameMedium": "FC Bayern",
+            "nameShort": "FCB",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+              "alt": "Vereinslogo FC Bayern München",
+              "caption": "",
+              "origWidth": 1000,
+              "origHeight": 1000,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1729242280/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": {
+                    "x": 2418,
+                    "y": 2418,
+                    "__typename": "FocusPoint"
+                  },
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        },
+        {
+          "__typename": "Match",
+          "id": "baee63e9-99db-458a-bad9-a9f091d33657-allianz-arena-de-de",
+          "link": {
+            "__typename": "Link",
+            "newTabOrWindow": false,
+            "title": null,
+            "target": {
+              "id": "baee63e9-99db-458a-bad9-a9f091d33657-de_DE",
+              "path": "/de/spiele/allianz-arena/champions-league/2024-2025/champions-league-finale-n-n-n-a-31-05-2025/news",
+              "channelId": "allianz-arena-de-de",
+              "channelPath": "/de",
+              "differentChannelDomain": null,
+              "locale": "de-DE",
+              "pageType": "MATCH",
+              "__typename": "InternalLink"
+            }
+          },
+          "sportsDataId": "",
+          "selectedData": {
+            "__typename": "SelectedData",
+            "competitionData": {
+              "__typename": "KeyValue",
+              "key": "champions-league",
+              "value": "Champions League"
+            },
+            "matchDayData": {
+              "__typename": "KeyValue",
+              "key": "13",
+              "value": "Finale"
+            },
+            "seasonData": {
+              "__typename": "KeyValue",
+              "key": "2024-2025",
+              "value": "Saison 2024/2025"
+            },
+            "teamData": {
+              "__typename": "KeyValue",
+              "key": "",
+              "value": "???team.name.???"
+            }
+          },
+          "kickoff": {
+            "startDate": "2025-05-31T19:00:00Z",
+            "endDate": null,
+            "__typename": "ScheduleTime"
+          },
+          "stadium": null,
+          "attendance": null,
+          "away": {
+            "teamId": "NA",
+            "name": "N.A.",
+            "nameMedium": "N.A.",
+            "nameShort": "N.A.",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1717579745/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/platzhalter_500x500_2.png",
+              "alt": "Vereinslogo Platzhalter",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1717579745/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/platzhalter_500x500_2.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "home": {
+            "teamId": "NN",
+            "name": "N.N.",
+            "nameMedium": "N.N.",
+            "nameShort": "N.N.",
+            "ownTeam": true,
+            "__typename": "SoccerTeam",
+            "logo": {
+              "url": "https://img.fcbayern.com/image/upload/v1654870874/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/platzhalter_500x500.png",
+              "alt": "Vereinslogo Platzhalter",
+              "caption": "",
+              "origWidth": 500,
+              "origHeight": 500,
+              "focusX": 0,
+              "focusY": 0,
+              "__typename": "ImageFragment",
+              "transformationPresets": {
+                "oneToOne": {
+                  "url": "https://img.fcbayern.com/image/upload/t_cms-1x1/f_auto/v1654870874/cms/public/images/fcbayern-com/media/images/homepage/vereinswappen/platzhalter_500x500.png",
+                  "width": 2048,
+                  "height": 2048,
+                  "focusPoint": null,
+                  "__typename": "TransformationPreset"
+                },
+                "__typename": "TransformationPresets"
+              }
+            }
+          },
+          "ticketLinks": [],
+          "tvBroadcasts": [],
+          "relatedMatches": [],
+          "matchState": {
+            "matchStateType": "PREMATCH",
+            "matchPeriod": "FIRST_HALFTIME",
+            "timeInfo": {
+              "showClock": false,
+              "descriptionShort": "",
+              "descriptionLong": "",
+              "additionalDescriptionShort": "",
+              "additionalDescriptionLong": "",
+              "__typename": "TimeInfo"
+            },
+            "score": {
+              "home": "-",
+              "away": "-",
+              "pastPeriod": "",
+              "__typename": "MatchScore"
+            },
+            "completed": false,
+            "__typename": "MatchState"
+          },
+          "isOwnMatch": true
+        }
+      ]
+    }
+  }
+}

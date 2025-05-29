@@ -51,3 +51,11 @@ dotenvy = "0.15.7"
 nu-ansi-term = "0.50.1"
 terminal-link = "0.1.0"
 futures = "0.3.31"
+axum = { version = "0.8.4", features = [
+  "macros",
+  "tracing",
+  "query",
+  "json",
+  "tokio",
+] }
+tower = { version = "0.5", features = ["timeout"] }

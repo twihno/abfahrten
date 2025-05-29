@@ -75,4 +75,19 @@ impl FromStr for StationRequests {
 pub struct AppConfig {
     #[envconfig(from = "STATIONS")]
     pub station_requests: StationRequests,
+
+    #[envconfig(nested)]
+    pub server_config: ServerConfig,
+}
+
+#[derive(Envconfig, Clone, Debug)]
+pub struct ServerConfig {
+    #[envconfig(from = "PORT", default = "8000")]
+    pub port: u16,
+
+    #[envconfig(from = "BASE_URL", default = "/")]
+    pub base_url: String,
+
+    #[envconfig(from = "ONLY_LOCALHOST", default = "false")]
+    pub only_localhost: bool,
 }
