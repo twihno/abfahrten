@@ -2,7 +2,11 @@ use std::sync::Arc;
 
 use clap::{Parser, Subcommand};
 
-use backend_rs2::{api::start_server, load_config, search_stations};
+use backend_rs2::{
+    api::start_server, clients::transport::get_all_available_providers, load_config,
+    search_stations,
+};
+use nu_ansi_term::Style;
 use tokio::task::JoinSet;
 use tracing::debug;
 
@@ -44,7 +48,7 @@ enum Commands {
 async fn main() {
     let cli = Cli::parse();
 
-    match &cli.command {
+    match cli.command {
         // Start the cache server with the environment config
         Commands::Start => {
             let mut set = JoinSet::new();
@@ -62,11 +66,22 @@ async fn main() {
             provider,
             detailed,
         } => {
-            search_stations(name, provider, *detailed).await;
+            search_stations(&name, &provider, detailed).await;
         }
         // Do stuff with the available providers, e.g. list them
         Commands::Providers { list } => {
-            println!("Should I list? {list}")
+            if list {
+                println!(
+                    "{}",
+                    Style::new()
+                        .bold()
+                        .underline()
+                        .paint("Available providers:")
+                );
+                for (id, name) in get_all_available_providers() {
+                    println!(" - {id} / {name}");
+                }
+            }
         }
     };
 }
